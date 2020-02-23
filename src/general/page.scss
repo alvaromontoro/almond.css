@@ -1,0 +1,13 @@
+html {
+  background-color: var(--secondary-bg);
+  color: var(--secondary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-root);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-size: 1rem;
+  margin: 1rem;
+}

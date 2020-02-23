@@ -12,6 +12,7 @@
   --secondary-bg: #fff;
   /* Font */
   --font-family: Helvetica, Arial, sans-serif;
+  --font-size-root: 16px;
   --font-weight-bold: 800;
   --font-weight-normal: 400;
   --font-weight-thin: 200; }
@@ -19,3 +20,15 @@
 :focus {
   outline: 1px dashed var(--primary);
   outline-offset: 2px; }
+
+html {
+  background-color: var(--secondary-bg);
+  color: var(--secondary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-root);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  font-size: 1rem;
+  margin: 1rem; }
