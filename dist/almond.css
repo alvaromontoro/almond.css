@@ -75,3 +75,9 @@ hgroup {
   hgroup h5,
   hgroup h6 {
     margin: 0; }
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+  max-width: 80ch; }
