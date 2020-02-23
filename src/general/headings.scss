@@ -38,6 +38,7 @@ h6 {
 // hgroup is obsolete. Added because many browsers still support it
 hgroup {
   border-left: 5px solid var(--primary);
+  display: block;
   margin: 1rem 0;
   padding-left: 1rem;
 
