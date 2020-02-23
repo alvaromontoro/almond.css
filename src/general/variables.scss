@@ -1,19 +1,23 @@
+$primary: #369;
+$secondary: #222;
+
 :root {
   /* Colors */
-  --primary: #369;
-  --primary-darker: #369;
-  --primary-dark: #258;
-  --primary-darker: #036;
-  --primary-light: #9cf;
-  --primary-lighter: #def;
+  --primary: #{$primary};
   --primary-bg: #fff;
-  --secondary: #222;
+  --primary-bright: #7ef;
+  --primary-transparent: #{rgba($primary, 0.05)};
+  --primary-dark: #{darken($primary, 13%)};
+  --primary-darker: #{darken($primary, 26%)};
+  --primary-light: #{lighten($primary, 33%)};
+  --primary-lighter: #{lighten($primary, 55%)};
+  --secondary: #{$secondary};
   --secondary-bg: #fff;
-  --secondary-transparent: rgba(32, 32, 32, 0.05);
-  --secondary-dark: #111;
-  --secondary-darker: #000;
-  --secondary-light: #aaa;
-  --secondary-lighter: #eee;
+  --secondary-transparent: #{rgba($secondary, 0.05)};
+  --secondary-dark: #{darken($secondary, 6.5%)};
+  --secondary-darker: #{darken($secondary, 15%)};
+  --secondary-light: #{lighten($secondary, 55%)};
+  --secondary-lighter: #{lighten($secondary, 82%)};
 
   /* Font */
   --font-family: Helvetica, Arial, sans-serif;
@@ -21,4 +25,7 @@
   --font-weight-bold: 800;
   --font-weight-normal: 400;
   --font-weight-thin: 200;
+
+  /* Inputs */
+  --border-radius: 2px;
 }

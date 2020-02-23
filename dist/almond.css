@@ -7,25 +7,28 @@
 :root {
   /* Colors */
   --primary: #369;
-  --primary-darker: #369;
-  --primary-dark: #258;
-  --primary-darker: #036;
-  --primary-light: #9cf;
-  --primary-lighter: #def;
   --primary-bg: #fff;
+  --primary-bright: #7ef;
+  --primary-transparent: rgba(51, 102, 153, 0.05);
+  --primary-dark: #224567;
+  --primary-darker: #122436;
+  --primary-light: #98badd;
+  --primary-lighter: #ecf2f9;
   --secondary: #222;
   --secondary-bg: #fff;
-  --secondary-transparent: rgba(32, 32, 32, 0.05);
-  --secondary-dark: #111;
-  --secondary-darker: #000;
-  --secondary-light: #aaa;
-  --secondary-lighter: #eee;
+  --secondary-transparent: rgba(34, 34, 34, 0.05);
+  --secondary-dark: #111111;
+  --secondary-darker: black;
+  --secondary-light: #aeaeae;
+  --secondary-lighter: #f3f3f3;
   /* Font */
   --font-family: Helvetica, Arial, sans-serif;
   --font-size-root: 16px;
   --font-weight-bold: 800;
   --font-weight-normal: 400;
-  --font-weight-thin: 200; }
+  --font-weight-thin: 200;
+  /* Inputs */
+  --border-radius: 2px; }
 
 :focus {
   outline: 1px dashed var(--primary);
@@ -142,6 +145,12 @@ blockquote {
     margin-top: 0; }
   blockquote > :last-child {
     margin-bottom: 0; }
+
+mark {
+  background-color: var(--primary-bright);
+  border-left: 4px solid var(--primary-bright);
+  border-right: 4px solid var(--primary-bright);
+  color: var(--secondary-darker); }
 
 p {
   font-size: 1rem;
