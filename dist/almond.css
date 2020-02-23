@@ -66,6 +66,7 @@ h6 {
 
 hgroup {
   border-left: 5px solid var(--primary);
+  display: block;
   margin: 1rem 0;
   padding-left: 1rem; }
   hgroup h1,
@@ -75,6 +76,10 @@ hgroup {
   hgroup h5,
   hgroup h6 {
     margin: 0; }
+
+address {
+  display: block;
+  font-style: normal; }
 
 p {
   font-size: 1rem;

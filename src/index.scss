@@ -5,11 +5,14 @@
 /** Project: https://github.com/alvaromontoro/almond.css   **/
 /************************************************************/
 
-// general stylings
+// variables
 @import "./general/variables.scss";
+
+// general stylings
 @import "./general/pseudo.scss";
 @import "./general/page.scss";
 @import "./general/headings.scss";
 
 // tag specific styles
+@import "./tags/address.scss";
 @import "./tags/p.scss";
