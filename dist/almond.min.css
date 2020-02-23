@@ -1,1 +1,1 @@
-:root{--primary: #369;--primary-bg: #fff;--secondary: #222;--secondary-bg: #fff;--font-family: Helvetica, Arial, sans-serif;--font-weight-bold: 800;--font-weight-normal: 400;--font-weight-thin: 200}
+:root{--primary: #369;--primary-bg: #fff;--secondary: #222;--secondary-bg: #fff;--font-family: Helvetica, Arial, sans-serif;--font-weight-bold: 800;--font-weight-normal: 400;--font-weight-thin: 200}:focus{outline:1px dashed var(--primary);outline-offset:2px}

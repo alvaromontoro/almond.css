@@ -15,3 +15,7 @@
   --font-weight-bold: 800;
   --font-weight-normal: 400;
   --font-weight-thin: 200; }
+
+:focus {
+  outline: 1px dashed var(--primary);
+  outline-offset: 2px; }
