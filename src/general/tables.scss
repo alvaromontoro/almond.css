@@ -1,0 +1,35 @@
+table {
+  background-color: var(--secondary-bg);
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+thead {
+  box-shadow: inset 0 -2px var(--secondary);
+}
+
+tfoot {
+  box-shadow: inset 0 2px var(--secondary);
+}
+
+tbody {
+  tr:nth-child(even) {
+    background-color: var(--secondary-lighter);
+  }
+
+  tr:hover {
+    background-color: var(--primary-lighter);
+  }
+}
+
+td,
+th {
+  padding: 1rem 0.5rem;
+  vertical-align: top;
+}
+
+th {
+  font-weight: var(--font-weight-bold);
+}
