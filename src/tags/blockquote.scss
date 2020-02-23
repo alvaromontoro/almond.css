@@ -12,9 +12,10 @@ blockquote {
 
   &::before {
     content: open-quote;
-    color: var(--secondary-transparent);
+    color: hsla(var(--secondaryH), var(--secondaryS), var(--secondaryL), 0.15);
     font-size: 5rem;
     left: 0;
+    line-height: 1;
     position: absolute;
     top: 0;
     z-index: -1;
