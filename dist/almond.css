@@ -15,6 +15,7 @@
   --primary-bg: #fff;
   --secondary: #222;
   --secondary-bg: #fff;
+  --secondary-transparent: rgba(32, 32, 32, 0.05);
   --secondary-dark: #111;
   --secondary-darker: #000;
   --secondary-light: #aaa;
@@ -115,7 +116,32 @@ th {
 
 address {
   display: block;
-  font-style: normal; }
+  font-style: normal;
+  margin: 1rem 0; }
+
+blockquote {
+  background-color: var(--secondary-transparent);
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem 0 1rem 3rem;
+  max-width: 80ch;
+  max-width: calc(80ch - 3rem);
+  overflow: hidden;
+  padding: 1rem;
+  page-break-inside: avoid;
+  position: relative; }
+  blockquote::before {
+    content: open-quote;
+    color: var(--secondary-transparent);
+    font-size: 5rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
 
 p {
   font-size: 1rem;

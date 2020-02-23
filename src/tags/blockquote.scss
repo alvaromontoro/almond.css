@@ -1,0 +1,30 @@
+blockquote {
+  background-color: var(--secondary-transparent);
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem 0 1rem 3rem;
+  max-width: 80ch;
+  max-width: calc(80ch - 3rem);
+  overflow: hidden;
+  padding: 1rem;
+  page-break-inside: avoid;
+  position: relative;
+
+  &::before {
+    content: open-quote;
+    color: var(--secondary-transparent);
+    font-size: 5rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  & > :first-child {
+    margin-top: 0;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
