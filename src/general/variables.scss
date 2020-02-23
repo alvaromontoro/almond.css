@@ -1,23 +1,26 @@
-$primary: #369;
-$secondary: #222;
-
 :root {
   /* Colors */
-  --primary: #{$primary};
+  --primaryH: 210;
+  --primaryS: 50%;
+  --primaryL: 40%;
+  --primary: hsl(var(--primaryH), var(--primaryS), var(--primaryL));
   --primary-bg: #fff;
   --primary-bright: #7ef;
-  --primary-transparent: #{rgba($primary, 0.05)};
-  --primary-dark: #{darken($primary, 13%)};
-  --primary-darker: #{darken($primary, 26%)};
-  --primary-light: #{lighten($primary, 33%)};
-  --primary-lighter: #{lighten($primary, 55%)};
-  --secondary: #{$secondary};
+  --primary-transparent: hsla(var(--primaryH), var(--primaryS), var(--primaryL), 0.05);
+  --primary-dark: hsl(var(--primaryH), var(--primaryS), calc(var(--primaryL) * 0.5));
+  --primary-darker: hsl(var(--primaryH), var(--primaryS), calc(var(--primaryL) * 0.2));
+  --primary-light: hsl(var(--primaryH), var(--primaryS), 75%);
+  --primary-lighter: hsl(var(--primaryH), var(--primaryS), 96%);
+  --secondaryH: 0;
+  --secondaryS: 0%;
+  --secondaryL: 13%;
+  --secondary: hsl(var(--secondaryH), var(--secondaryS), var(--secondaryL));
   --secondary-bg: #fff;
-  --secondary-transparent: #{rgba($secondary, 0.05)};
-  --secondary-dark: #{darken($secondary, 6.5%)};
-  --secondary-darker: #{darken($secondary, 15%)};
-  --secondary-light: #{lighten($secondary, 55%)};
-  --secondary-lighter: #{lighten($secondary, 82%)};
+  --secondary-transparent: hsl(var(--secondaryH), var(--secondaryS), var(--secondaryL), 0.05);
+  --secondary-dark: hsl(var(--secondaryH), var(--secondaryS), calc(var(--secondaryL) * 0.5));
+  --secondary-darker: hsl(var(--secondaryH), var(--secondaryS), calc(var(--secondaryL) * 0.2));
+  --secondary-light: hsl(var(--secondaryH), var(--secondaryS), 75%);
+  --secondary-lighter: hsl(var(--secondaryH), var(--secondaryS), 96%);
 
   /* Font */
   --font-family: Helvetica, Arial, sans-serif;

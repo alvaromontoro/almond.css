@@ -6,21 +6,27 @@
 /************************************************************/
 :root {
   /* Colors */
-  --primary: #369;
+  --primaryH: 210;
+  --primaryS: 50%;
+  --primaryL: 40%;
+  --primary: hsl(var(--primaryH), var(--primaryS), var(--primaryL));
   --primary-bg: #fff;
   --primary-bright: #7ef;
-  --primary-transparent: rgba(51, 102, 153, 0.05);
-  --primary-dark: #224567;
-  --primary-darker: #122436;
-  --primary-light: #98badd;
-  --primary-lighter: #ecf2f9;
-  --secondary: #222;
+  --primary-transparent: hsla(var(--primaryH), var(--primaryS), var(--primaryL), 0.05);
+  --primary-dark: hsl(var(--primaryH), var(--primaryS), calc(var(--primaryL) * 0.5));
+  --primary-darker: hsl(var(--primaryH), var(--primaryS), calc(var(--primaryL) * 0.2));
+  --primary-light: hsl(var(--primaryH), var(--primaryS), 75%);
+  --primary-lighter: hsl(var(--primaryH), var(--primaryS), 96%);
+  --secondaryH: 0;
+  --secondaryS: 0%;
+  --secondaryL: 13%;
+  --secondary: hsl(var(--secondaryH), var(--secondaryS), var(--secondaryL));
   --secondary-bg: #fff;
-  --secondary-transparent: rgba(34, 34, 34, 0.05);
-  --secondary-dark: #111111;
-  --secondary-darker: black;
-  --secondary-light: #aeaeae;
-  --secondary-lighter: #f3f3f3;
+  --secondary-transparent: hsl(var(--secondaryH), var(--secondaryS), var(--secondaryL), 0.05);
+  --secondary-dark: hsl(var(--secondaryH), var(--secondaryS), calc(var(--secondaryL) * 0.5));
+  --secondary-darker: hsl(var(--secondaryH), var(--secondaryS), calc(var(--secondaryL) * 0.2));
+  --secondary-light: hsl(var(--secondaryH), var(--secondaryS), 75%);
+  --secondary-lighter: hsl(var(--secondaryH), var(--secondaryS), 96%);
   /* Font */
   --font-family: Helvetica, Arial, sans-serif;
   --font-size-root: 16px;
@@ -135,9 +141,10 @@ blockquote {
   position: relative; }
   blockquote::before {
     content: open-quote;
-    color: var(--secondary-transparent);
+    color: hsla(var(--secondaryH), var(--secondaryS), var(--secondaryL), 0.15);
     font-size: 5rem;
     left: 0;
+    line-height: 1;
     position: absolute;
     top: 0;
     z-index: -1; }
