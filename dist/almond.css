@@ -266,6 +266,14 @@ blockquote {
   blockquote > :last-child {
     margin-bottom: 0; }
 
+hr {
+  border: 0;
+  border-top: 1px solid var(--secondary-light);
+  height: 0;
+  margin: 1rem auto;
+  max-width: 15rem;
+  width: 50%; }
+
 mark {
   background-color: var(--primary-bright);
   border-left: 4px solid var(--primary-bright);
