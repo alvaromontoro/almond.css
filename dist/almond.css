@@ -140,11 +140,13 @@ select {
   color: inherit;
   font: inherit;
   font-size: 1rem;
+  height: 2.5rem;
+  line-height: normal;
   margin: 0;
   padding: 0 0.5rem;
-  height: 2.5rem;
   max-width: 100%;
-  min-width: 15rem; }
+  min-width: 15rem;
+  text-transform: none; }
   button:invalid,
   input:invalid,
   optgroup:invalid,
@@ -162,7 +164,8 @@ select {
     color: var(--secondary-light); }
 
 textarea {
-  height: 5rem; }
+  height: 5rem;
+  overflow: auto; }
 
 input[type="date"],
 input[type="datetime-local"],
@@ -207,26 +210,45 @@ input[type="url"] {
 input[type="number"] {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M26,4 21,36 M15,4 10,36 M4,15 36,15 M2,26 34,26' fill='none' stroke='%23ccc' stroke-width='2' /></svg>"); }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  appearance: textfield; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none; }
+
 input[type="radio"],
 input[type="checkbox"],
 input[type="image"],
 input[type="file"] {
   border: 0;
+  box-sizing: border-box;
   height: auto;
   max-width: auto;
-  min-width: auto; }
+  min-width: auto;
+  padding: 0; }
 
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+  -webkit-appearance: button;
+  appearance: button;
   background-color: var(--primary);
   border: 1px solid transparent;
   color: var(--primary-bg);
+  cursor: pointer;
   display: inline-block;
+  overflow: visible;
   padding: 0 1rem;
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   max-width: auto;
   min-width: auto;
   text-transform: uppercase; }
@@ -242,6 +264,18 @@ input[type="reset"] {
   color: var(--primary); }
   input[type="reset"]:hover {
     background-color: var(--primary-lighter); }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+optgroup {
+  font-weight: var(--font-weight-bold); }
 
 address {
   display: block;
