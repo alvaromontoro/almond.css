@@ -131,11 +131,15 @@ th {
 input,
 textarea,
 select,
-option {
+option,
+optgroup {
   border: 1px solid var(--secondary-light);
   border-radius: var(--border-radius);
   box-sizing: border-box;
+  color: inherit;
+  font: inherit;
   font-size: 1rem;
+  margin: 0;
   padding: 0 0.5rem;
   height: 2.5rem;
   max-width: 100%;
@@ -143,12 +147,14 @@ option {
   input:invalid,
   textarea:invalid,
   select:invalid,
-  option:invalid {
+  option:invalid,
+  optgroup:invalid {
     border-color: var(--error); }
   input:disabled,
   textarea:disabled,
   select:disabled,
-  option:disabled {
+  option:disabled,
+  optgroup:disabled {
     background: var(--secondary-lighter);
     color: var(--secondary-light); }
 
@@ -198,6 +204,37 @@ input[type="file"] {
   height: auto;
   max-width: auto;
   min-width: auto; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: var(--primary);
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  color: var(--primary-bg);
+  display: inline-block;
+  height: 2.5rem;
+  padding: 0 1rem;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0;
+  max-width: auto;
+  min-width: auto;
+  text-transform: uppercase; }
+  button:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover {
+    background-color: var(--primary-dark); }
+
+input[type="reset"] {
+  background-color: var(--primary-bg);
+  border: 1px solid var(--primary);
+  color: var(--primary); }
+  input[type="reset"]:hover {
+    background-color: var(--primary-lighter); }
 
 address {
   display: block;
