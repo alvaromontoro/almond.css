@@ -146,11 +146,11 @@ select {
   max-width: 100%;
   min-width: 15rem;
   text-transform: none; }
-  input:not([readonly]):not([type="image"]):hover,
-  optgroup:not([readonly]):not([type="image"]):hover,
-  option:not([readonly]):not([type="image"]):hover,
-  textarea:not([readonly]):not([type="image"]):hover,
-  select:not([readonly]):not([type="image"]):hover {
+  input:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
+  optgroup:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
+  option:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
+  textarea:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
+  select:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover {
     border: 1px solid var(--secondary); }
   input:invalid,
   optgroup:invalid,
@@ -178,6 +178,7 @@ select {
 
 textarea {
   height: 5rem;
+  line-height: 1.5rem;
   overflow: auto; }
 
 input[type="date"],
@@ -364,3 +365,12 @@ p {
   line-height: 1.5rem;
   margin: 1rem 0;
   max-width: 80ch; }
+
+q {
+  font-style: italic; }
+  q::before {
+    content: open-quote;
+    font-style: normal; }
+  q::after {
+    content: close-quote;
+    font-style: normal; }

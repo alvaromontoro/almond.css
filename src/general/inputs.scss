@@ -17,7 +17,7 @@ select {
   min-width: 15rem;
   text-transform: none;
 
-  &:not([readonly]):not([type="image"]):hover {
+  &:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover {
     border: 1px solid var(--secondary);
   }
 
@@ -38,6 +38,7 @@ select {
 
 textarea {
   height: 5rem;
+  line-height: 1.5rem;
   overflow: auto;
 }
 
