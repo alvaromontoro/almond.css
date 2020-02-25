@@ -1,4 +1,3 @@
-button,
 input,
 optgroup,
 option,
@@ -18,10 +17,19 @@ select {
   min-width: 15rem;
   text-transform: none;
 
+  &:not([readonly]):not([type="image"]):hover {
+    border: 1px solid var(--secondary);
+  }
+
   &:invalid {
     border-color: var(--error);
   }
 
+  &:invalid:hover {
+    border: 1px solid #aa0000;
+  }
+
+  &[disabled],
   &:disabled {
     background: var(--secondary-lighter);
     color: var(--secondary-light);
@@ -121,19 +129,28 @@ input[type="submit"] {
   appearance: button;
   background-color: var(--primary);
   border: 1px solid transparent;
+  box-sizing: border-box;
   color: var(--primary-bg);
   cursor: pointer;
   display: inline-block;
-  overflow: visible;
-  padding: 0 1rem;
   font-size: 0.8rem;
   font-weight: var(--font-weight-bold);
+  height: 2.5rem;
   max-width: auto;
   min-width: auto;
+  overflow: visible;
+  padding: 0 1rem;
   text-transform: uppercase;
 
-  &:hover {
+  &[disabled],
+  &:disabled {
+    background: var(--secondary-lighter);
+    color: var(--secondary-light);
+  }
+
+  &:not(:disabled):not([disabled]):hover {
     background-color: var(--primary-dark);
+    border: 1px solid transparent;
   }
 }
 
@@ -142,8 +159,15 @@ input[type="reset"] {
   border: 1px solid var(--primary);
   color: var(--primary);
 
-  &:hover {
+  &:not(:disabled):not([disabled]):hover {
     background-color: var(--primary-lighter);
+  }
+
+  &:disabled,
+  &[disabled] {
+    background: var(--secondary-lighter);
+    border: 1px solid transparent;
+    color: var(--secondary-light);
   }
 }
 
