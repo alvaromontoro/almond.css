@@ -128,7 +128,6 @@ th {
 th {
   font-weight: var(--font-weight-bold); }
 
-button,
 input,
 optgroup,
 option,
@@ -147,18 +146,32 @@ select {
   max-width: 100%;
   min-width: 15rem;
   text-transform: none; }
-  button:invalid,
+  input:not([readonly]):not([type="image"]):hover,
+  optgroup:not([readonly]):not([type="image"]):hover,
+  option:not([readonly]):not([type="image"]):hover,
+  textarea:not([readonly]):not([type="image"]):hover,
+  select:not([readonly]):not([type="image"]):hover {
+    border: 1px solid var(--secondary); }
   input:invalid,
   optgroup:invalid,
   option:invalid,
   textarea:invalid,
   select:invalid {
     border-color: var(--error); }
-  button:disabled,
-  input:disabled,
+  input:invalid:hover,
+  optgroup:invalid:hover,
+  option:invalid:hover,
+  textarea:invalid:hover,
+  select:invalid:hover {
+    border: 1px solid #aa0000; }
+  input[disabled], input:disabled,
+  optgroup[disabled],
   optgroup:disabled,
+  option[disabled],
   option:disabled,
+  textarea[disabled],
   textarea:disabled,
+  select[disabled],
   select:disabled {
     background: var(--secondary-lighter);
     color: var(--secondary-light); }
@@ -242,28 +255,44 @@ input[type="submit"] {
   appearance: button;
   background-color: var(--primary);
   border: 1px solid transparent;
+  box-sizing: border-box;
   color: var(--primary-bg);
   cursor: pointer;
   display: inline-block;
-  overflow: visible;
-  padding: 0 1rem;
   font-size: 0.8rem;
   font-weight: var(--font-weight-bold);
+  height: 2.5rem;
   max-width: auto;
   min-width: auto;
+  overflow: visible;
+  padding: 0 1rem;
   text-transform: uppercase; }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    background-color: var(--primary-dark); }
+  button[disabled], button:disabled,
+  input[type="button"][disabled],
+  input[type="button"]:disabled,
+  input[type="reset"][disabled],
+  input[type="reset"]:disabled,
+  input[type="submit"][disabled],
+  input[type="submit"]:disabled {
+    background: var(--secondary-lighter);
+    color: var(--secondary-light); }
+  button:not(:disabled):not([disabled]):hover,
+  input[type="button"]:not(:disabled):not([disabled]):hover,
+  input[type="reset"]:not(:disabled):not([disabled]):hover,
+  input[type="submit"]:not(:disabled):not([disabled]):hover {
+    background-color: var(--primary-dark);
+    border: 1px solid transparent; }
 
 input[type="reset"] {
   background-color: var(--primary-bg);
   border: 1px solid var(--primary);
   color: var(--primary); }
-  input[type="reset"]:hover {
+  input[type="reset"]:not(:disabled):not([disabled]):hover {
     background-color: var(--primary-lighter); }
+  input[type="reset"]:disabled, input[type="reset"][disabled] {
+    background: var(--secondary-lighter);
+    border: 1px solid transparent;
+    color: var(--secondary-light); }
 
 button[disabled],
 html input[disabled] {
@@ -314,6 +343,15 @@ hr {
   margin: 1rem auto;
   max-width: 15rem;
   width: 50%; }
+
+kbd {
+  background-color: var(--secondary-lighter);
+  border: 1px solid var(--secondary-light);
+  border-radius: var(--border-radius);
+  color: var(--secondary);
+  font-family: monospace, monospace;
+  font-size: 0.9rem;
+  padding: 0.125rem 0.25rem; }
 
 mark {
   background-color: var(--primary-bright);
