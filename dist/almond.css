@@ -278,12 +278,13 @@ input[type="submit"] {
   appearance: button;
   background-color: var(--primary);
   border: 1px solid transparent;
+  border-radius: var(--border-radius);
   box-sizing: border-box;
   color: var(--primary-bg);
   cursor: pointer;
   display: inline-block;
   font-size: 0.8rem;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-normal);
   height: 2.5rem;
   max-width: auto;
   min-width: auto;
