@@ -114,7 +114,8 @@ ol {
 li {
   font-size: 1rem;
   line-height: 1.5rem;
-  max-width: 80ch; }
+  max-width: 80ch;
+  max-width: calc(80ch - 3rem); }
 
 table {
   background-color: var(--secondary-bg);
@@ -143,7 +144,7 @@ th {
 th {
   font-weight: var(--font-weight-bold); }
 
-input,
+input:not([type="file"]),
 optgroup,
 option,
 textarea,
@@ -161,25 +162,25 @@ select {
   max-width: 100%;
   min-width: 15rem;
   text-transform: none; }
-  input:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
+  input:not([type="file"]):not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
   optgroup:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
   option:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
   textarea:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
   select:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover {
     border: 1px solid var(--secondary); }
-  input:invalid,
+  input:not([type="file"]):invalid,
   optgroup:invalid,
   option:invalid,
   textarea:invalid,
   select:invalid {
     border-color: var(--error); }
-  input:invalid:hover,
+  input:not([type="file"]):invalid:hover,
   optgroup:invalid:hover,
   option:invalid:hover,
   textarea:invalid:hover,
   select:invalid:hover {
     border: 1px solid #aa0000; }
-  input[disabled], input:disabled,
+  input:not([type="file"])[disabled], input:not([type="file"]):disabled,
   optgroup[disabled],
   optgroup:disabled,
   option[disabled],
@@ -259,7 +260,7 @@ input[type="file"] {
   border: 0;
   box-sizing: border-box;
   height: auto;
-  max-width: auto;
+  max-width: initial;
   min-width: auto;
   padding: 0; }
 
@@ -322,6 +323,19 @@ input::-moz-focus-inner {
 optgroup {
   font-weight: var(--font-weight-bold); }
 
+a,
+a:link,
+a:visited,
+a:active,
+a:focus {
+  color: var(--primary);
+  font-weight: var(--font-weight-normal);
+  text-decoration: underline; }
+
+a:hover {
+  text-decoration: none;
+  color: var(--primary-dark); }
+
 address {
   display: block;
   font-style: normal;
@@ -349,7 +363,8 @@ blockquote {
     top: 0;
     z-index: -1; }
   blockquote > :first-child {
-    margin-top: 0; }
+    margin-top: 0;
+    text-indent: 1rem; }
   blockquote > :last-child {
     margin-bottom: 0; }
 

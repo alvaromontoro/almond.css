@@ -1,0 +1,14 @@
+a,
+a:link,
+a:visited,
+a:active,
+a:focus {
+  color: var(--primary);
+  font-weight: var(--font-weight-normal);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--primary-dark);
+}
