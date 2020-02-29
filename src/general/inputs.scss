@@ -1,4 +1,4 @@
-input,
+input:not([type="file"]),
 optgroup,
 option,
 textarea,
@@ -117,7 +117,7 @@ input[type="file"] {
   border: 0;
   box-sizing: border-box;
   height: auto;
-  max-width: auto;
+  max-width: initial;
   min-width: auto;
   padding: 0;
 }
