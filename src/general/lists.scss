@@ -1,0 +1,17 @@
+ul,
+ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+
+  ul,
+  ol {
+    margin: 0;
+  }
+}
+
+li {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  max-width: 80ch;
+  max-width: calc(80ch - 3rem);
+}

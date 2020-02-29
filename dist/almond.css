@@ -101,6 +101,21 @@ hgroup {
   hgroup h6 {
     margin: 0; }
 
+ul,
+ol {
+  margin: 1rem 0;
+  padding-left: 2rem; }
+  ul ul,
+  ul ol,
+  ol ul,
+  ol ol {
+    margin: 0; }
+
+li {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  max-width: 80ch; }
+
 table {
   background-color: var(--secondary-bg);
   border: 0;
@@ -327,7 +342,8 @@ blockquote {
     content: open-quote;
     color: hsla(var(--secondaryH), var(--secondaryS), var(--secondaryL), 0.15);
     font-size: 5rem;
-    left: 0;
+    font-family: "Times New Roman", "Times", serif;
+    left: 0.25rem;
     line-height: 1;
     position: absolute;
     top: 0;
