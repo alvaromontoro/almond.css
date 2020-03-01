@@ -457,7 +457,22 @@ details {
 
 dfn {
   font-style: italic;
-  font-weight: var(--font-weight-bold); }
+  font-weight: var(--font-weight-normal); }
+
+dl {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+  max-width: 80ch; }
+
+dt {
+  font-weight: var(--font-weight-normal);
+  margin-top: 1rem; }
+
+dd {
+  margin-left: 1rem;
+  font-style: italic; }
 
 fieldset {
   border: 1px solid var(--secondary-light);
