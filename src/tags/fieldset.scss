@@ -1,0 +1,16 @@
+fieldset {
+  border: 1px solid var(--secondary-light);
+  border-radius: var(--border-radius);
+  padding: 0 1rem 1rem 1rem;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+legend {
+  background: var(--secondary-lighter);
+  border: 1px solid var(--secondary-light);
+  border-radius: var(--border-radius);
+  padding: 0.25rem 0.5rem;
+}

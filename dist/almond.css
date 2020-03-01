@@ -407,6 +407,19 @@ details {
   details[open] summary {
     border-bottom: 1px solid var(--secondary-light); }
 
+fieldset {
+  border: 1px solid var(--secondary-light);
+  border-radius: var(--border-radius);
+  padding: 0 1rem 1rem 1rem; }
+  fieldset > :last-child {
+    margin-bottom: 0; }
+
+legend {
+  background: var(--secondary-lighter);
+  border: 1px solid var(--secondary-light);
+  border-radius: var(--border-radius);
+  padding: 0.25rem 0.5rem; }
+
 hr {
   border: 0;
   border-top: 1px solid var(--secondary-light);
@@ -444,3 +457,6 @@ q {
   q::after {
     content: close-quote;
     font-style: normal; }
+
+small {
+  font-size: 0.75em; }
