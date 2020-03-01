@@ -402,6 +402,10 @@ a:hover {
   text-decoration: none;
   color: var(--primary-dark); }
 
+abbr[title] {
+  border-bottom: 0;
+  text-decoration: underline dashed var(--primary); }
+
 address {
   display: block;
   font-style: normal;
