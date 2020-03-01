@@ -5,7 +5,7 @@
   --primaryL: 40%;
   --primary: hsl(var(--primaryH), var(--primaryS), var(--primaryL));
   --primary-bg: #fff;
-  --primary-bright: #7ef;
+  --primary-bright: hsl(var(--primaryH), calc(var(--primaryS) * 1.25), 90%); // #7ef;
   --primary-transparent: hsla(var(--primaryH), var(--primaryS), var(--primaryL), 0.05);
   --primary-dark: hsl(var(--primaryH), var(--primaryS), calc(var(--primaryL) * 0.5));
   --primary-darker: hsl(var(--primaryH), var(--primaryS), calc(var(--primaryL) * 0.2));
