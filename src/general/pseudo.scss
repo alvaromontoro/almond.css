@@ -2,3 +2,8 @@
   outline: 1px dashed var(--primary);
   outline-offset: 2px;
 }
+
+[hidden],
+template {
+  display: none;
+}
