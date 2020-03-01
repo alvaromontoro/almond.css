@@ -455,6 +455,10 @@ details {
   details[open] summary {
     border-bottom: 1px solid var(--secondary-light); }
 
+dfn {
+  font-style: italic;
+  font-weight: var(--font-weight-bold); }
+
 fieldset {
   border: 1px solid var(--secondary-light);
   border-radius: var(--border-radius);
