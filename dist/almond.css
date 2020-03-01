@@ -30,7 +30,7 @@
   /* Font */
   --font-family: Helvetica, Arial, sans-serif;
   --font-size-root: 16px;
-  --font-weight-bold: 800;
+  --font-weight-bold: 700;
   --font-weight-normal: 400;
   --font-weight-thin: 200;
   /* Status */
@@ -348,9 +348,6 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-optgroup {
-  font-weight: var(--font-weight-bold); }
-
 input[type="radio"],
 input[type="checkbox"] {
   -moz-appearance: none;
@@ -373,6 +370,17 @@ input[type="checkbox"] {
     box-shadow: inset 0 0 0 0.185rem var(--secondary-lighter);
     background: var(--secondary-lighter); }
 
+select[multiple] {
+  min-height: 10rem;
+  padding: 0; }
+  select[multiple] option:checked {
+    background: var(--secondary-light) linear-gradient(0deg, var(--secondary-light) 0%, var(--secondary-light) 100%); }
+  select[multiple]:focus option:checked {
+    background: var(--primary) linear-gradient(0deg, var(--primary) 0%, var(--primary) 100%); }
+
+optgroup {
+  font-weight: var(--font-weight-bold); }
+
 option {
   border: 0;
   border-radius: 0;
@@ -382,12 +390,6 @@ option {
   option:hover {
     border: 0;
     background: var(--primary-lighter); }
-
-select[multiple] {
-  min-height: 10rem;
-  padding: 0; }
-  select[multiple]:focus option:checked {
-    background: var(--primary) linear-gradient(0deg, var(--primary) 0%, var(--primary) 100%); }
 
 a,
 a:link,

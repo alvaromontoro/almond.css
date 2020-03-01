@@ -1,3 +1,4 @@
+// general
 input:not([type="file"]),
 optgroup,
 option,
@@ -134,6 +135,7 @@ input[type="file"] {
   padding: 0;
 }
 
+// buttons
 button,
 input[type="button"],
 input[type="reset"],
@@ -196,10 +198,7 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-optgroup {
-  font-weight: var(--font-weight-bold);
-}
-
+// radios and checkboxes
 input[type="radio"],
 input[type="checkbox"] {
   -moz-appearance: none;
@@ -226,6 +225,25 @@ input[type="checkbox"] {
   }
 }
 
+// select
+select[multiple] {
+  min-height: 10rem;
+  padding: 0;
+
+  & option:checked {
+    background: var(--secondary-light)
+      linear-gradient(0deg, var(--secondary-light) 0%, var(--secondary-light) 100%);
+  }
+
+  &:focus option:checked {
+    background: var(--primary) linear-gradient(0deg, var(--primary) 0%, var(--primary) 100%);
+  }
+}
+
+optgroup {
+  font-weight: var(--font-weight-bold);
+}
+
 option {
   border: 0;
   border-radius: 0;
@@ -236,14 +254,5 @@ option {
   &:hover {
     border: 0;
     background: var(--primary-lighter);
-  }
-}
-
-select[multiple] {
-  min-height: 10rem;
-  padding: 0;
-
-  &:focus option:checked {
-    background: var(--primary) linear-gradient(0deg, var(--primary) 0%, var(--primary) 100%);
   }
 }
