@@ -1,8 +1,9 @@
 hr {
   border: 0;
   border-top: 1px solid var(--secondary-light);
+  box-sizing: content-box;
   height: 0;
-  margin: 1rem auto;
+  margin: 2rem auto;
   max-width: 15rem;
   width: 50%;
 }
