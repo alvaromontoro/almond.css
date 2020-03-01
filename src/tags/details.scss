@@ -1,6 +1,7 @@
 details {
   border: 1px solid var(--secondary-light);
   border-radius: var(--border-radius);
+  display: block;
   padding: 0 1rem;
 
   & summary {
