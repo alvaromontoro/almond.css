@@ -62,13 +62,6 @@ body {
   font-size: 1rem;
   margin: 1rem; }
 
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline; }
-
 h1,
 h2,
 h3,
@@ -134,6 +127,18 @@ li {
   max-width: 80ch;
   max-width: calc(80ch - 3rem); }
 
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: 100%; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
 table {
   background-color: var(--secondary-bg);
   border: 0;
@@ -179,12 +184,6 @@ select {
   max-width: 100%;
   min-width: 15rem;
   text-transform: none; }
-  input:not([type="file"]):not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
-  optgroup:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
-  option:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
-  textarea:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
-  select:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover {
-    border: 1px solid var(--secondary); }
   input:not([type="file"]):invalid,
   optgroup:invalid,
   option:invalid,
@@ -208,6 +207,11 @@ select {
   select:disabled {
     background: var(--secondary-lighter);
     color: var(--secondary-light); }
+
+input:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
+textarea:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
+select:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover {
+  border: 1px solid var(--secondary); }
 
 input[type="color"] {
   padding: 0.125rem; }
@@ -302,7 +306,7 @@ input[type="submit"] {
   display: inline-block;
   font-size: 0.8rem;
   font-weight: var(--font-weight-normal);
-  height: 2.5rem;
+  min-height: 2.5rem;
   max-width: auto;
   min-width: auto;
   overflow: visible;
@@ -368,6 +372,22 @@ input[type="checkbox"] {
   input[type="checkbox"]:disabled {
     box-shadow: inset 0 0 0 0.185rem var(--secondary-lighter);
     background: var(--secondary-lighter); }
+
+option {
+  border: 0;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  option:hover {
+    border: 0;
+    background: var(--primary-lighter); }
+
+select[multiple] {
+  min-height: 10rem;
+  padding: 0; }
+  select[multiple]:focus option:checked {
+    background: var(--primary) linear-gradient(0deg, var(--primary) 0%, var(--primary) 100%); }
 
 a,
 a:link,

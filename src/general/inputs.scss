@@ -17,10 +17,6 @@ select {
   min-width: 15rem;
   text-transform: none;
 
-  &:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover {
-    border: 1px solid var(--secondary);
-  }
-
   &:invalid {
     border-color: var(--error);
   }
@@ -33,6 +29,14 @@ select {
   &:disabled {
     background: var(--secondary-lighter);
     color: var(--secondary-light);
+  }
+}
+
+input,
+textarea,
+select {
+  &:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover {
+    border: 1px solid var(--secondary);
   }
 }
 
@@ -145,7 +149,7 @@ input[type="submit"] {
   display: inline-block;
   font-size: 0.8rem;
   font-weight: var(--font-weight-normal);
-  height: 2.5rem;
+  min-height: 2.5rem;
   max-width: auto;
   min-width: auto;
   overflow: visible;
@@ -219,5 +223,27 @@ input[type="checkbox"] {
   &:disabled {
     box-shadow: inset 0 0 0 0.185rem var(--secondary-lighter);
     background: var(--secondary-lighter);
+  }
+}
+
+option {
+  border: 0;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &:hover {
+    border: 0;
+    background: var(--primary-lighter);
+  }
+}
+
+select[multiple] {
+  min-height: 10rem;
+  padding: 0;
+
+  &:focus option:checked {
+    background: var(--primary) linear-gradient(0deg, var(--primary) 0%, var(--primary) 100%);
   }
 }
