@@ -50,17 +50,20 @@ template {
   display: none; }
 
 html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   background-color: var(--secondary-bg);
   color: var(--secondary);
   font-family: var(--font-family);
   font-size: var(--font-size-root);
   font-weight: var(--font-weight-thin);
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  margin: 0;
+  padding: 0; }
 
 body {
   font-size: 1rem;
-  margin: 1rem; }
+  margin: 0;
+  padding: 1rem; }
 
 h1,
 h2,
@@ -447,9 +450,11 @@ blockquote {
 code {
   background: var(--secondary-lighter);
   color: var(--secondary);
+  display: inline-block;
   font-family: monospace, monospace;
   font-size: 1em;
-  font-weight: var(--font-weight-normal); }
+  font-weight: var(--font-weight-normal);
+  padding: 0 0.25rem; }
 
 details {
   border: 1px solid var(--secondary-light);

@@ -1,7 +1,9 @@
 code {
   background: var(--secondary-lighter);
   color: var(--secondary);
+  display: inline-block;
   font-family: monospace, monospace;
   font-size: 1em;
   font-weight: var(--font-weight-normal);
+  padding: 0 0.25rem;
 }

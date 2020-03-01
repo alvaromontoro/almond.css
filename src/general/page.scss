@@ -1,14 +1,17 @@
 html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   background-color: var(--secondary-bg);
   color: var(--secondary);
   font-family: var(--font-family);
   font-size: var(--font-size-root);
   font-weight: var(--font-weight-thin);
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-size: 1rem;
-  margin: 1rem;
+  margin: 0;
+  padding: 1rem;
 }
