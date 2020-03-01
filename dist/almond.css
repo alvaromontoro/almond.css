@@ -382,7 +382,12 @@ select[multiple] {
     background: var(--primary) linear-gradient(0deg, var(--primary) 0%, var(--primary) 100%); }
 
 optgroup {
-  font-weight: var(--font-weight-bold); }
+  align-items: center;
+  border: 0;
+  border-radius: 0;
+  display: flex;
+  font-weight: var(--font-weight-bold);
+  justify-content: flex-start; }
 
 option {
   border: 0;
