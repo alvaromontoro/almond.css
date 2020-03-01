@@ -411,6 +411,10 @@ address {
   font-style: normal;
   margin: 1rem 0; }
 
+b,
+strong {
+  font-weight: var(--font-weight-bold); }
+
 blockquote {
   background-color: var(--secondary-transparent);
   box-sizing: border-box;
