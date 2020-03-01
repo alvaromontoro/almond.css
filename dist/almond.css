@@ -211,9 +211,9 @@ select {
     background: var(--secondary-lighter);
     color: var(--secondary-light); }
 
-input:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
-textarea:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover,
-select:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover {
+input:not([type="file"]):not([type="image"]):not(:invalid):not(:disabled):not([disabled]):not([readonly]):hover,
+textarea:not(:invalid):not(:disabled):not([disabled]):not([readonly]):hover,
+select:not(:invalid):not(:disabled):not([disabled]):not([readonly]):hover {
   border: 1px solid var(--secondary); }
 
 input[type="color"] {

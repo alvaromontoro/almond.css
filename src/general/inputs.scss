@@ -33,10 +33,10 @@ select {
   }
 }
 
-input,
+input:not([type="file"]):not([type="image"]),
 textarea,
 select {
-  &:not(:invalid):not(:disabled):not([disabled]):not([readonly]):not([type="image"]):hover {
+  &:not(:invalid):not(:disabled):not([disabled]):not([readonly]):hover {
     border: 1px solid var(--secondary);
   }
 }
