@@ -45,6 +45,10 @@
   outline: 1px dashed var(--primary);
   outline-offset: 2px; }
 
+[hidden],
+template {
+  display: none; }
+
 html {
   background-color: var(--secondary-bg);
   color: var(--secondary);
@@ -400,6 +404,7 @@ blockquote {
 details {
   border: 1px solid var(--secondary-light);
   border-radius: var(--border-radius);
+  display: block;
   padding: 0 1rem; }
   details summary {
     margin: 0 -1rem;
@@ -460,3 +465,16 @@ q {
 
 small {
   font-size: 0.75em; }
+
+sub,
+sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
