@@ -1,0 +1,14 @@
+details {
+  border: 1px solid var(--secondary-light);
+  border-radius: var(--border-radius);
+  padding: 0 1rem;
+
+  & summary {
+    margin: 0 -1rem;
+    padding: 1rem;
+  }
+
+  &[open] summary {
+    border-bottom: 1px solid var(--secondary-light);
+  }
+}

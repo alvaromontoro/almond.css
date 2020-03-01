@@ -397,6 +397,16 @@ blockquote {
   blockquote > :last-child {
     margin-bottom: 0; }
 
+details {
+  border: 1px solid var(--secondary-light);
+  border-radius: var(--border-radius);
+  padding: 0 1rem; }
+  details summary {
+    margin: 0 -1rem;
+    padding: 1rem; }
+  details[open] summary {
+    border-bottom: 1px solid var(--secondary-light); }
+
 hr {
   border: 0;
   border-top: 1px solid var(--secondary-light);
