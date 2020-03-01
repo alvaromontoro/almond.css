@@ -1,6 +1,7 @@
 fieldset {
   border: 1px solid var(--secondary-light);
   border-radius: var(--border-radius);
+  margin: 1rem 0;
   padding: 0 1rem 1rem 1rem;
 
   & > :last-child {

@@ -1,0 +1,6 @@
+img,
+svg:not(:root) {
+  border: 0;
+  max-width: 100%;
+  overflow: hidden;
+}

@@ -105,6 +105,12 @@ hgroup {
   hgroup h6 {
     margin: 0; }
 
+img,
+svg:not(:root) {
+  border: 0;
+  max-width: 100%;
+  overflow: hidden; }
+
 ul,
 ol {
   margin: 1rem 0;
@@ -415,6 +421,7 @@ details {
 fieldset {
   border: 1px solid var(--secondary-light);
   border-radius: var(--border-radius);
+  margin: 1rem 0;
   padding: 0 1rem 1rem 1rem; }
   fieldset > :last-child {
     margin-bottom: 0; }
