@@ -1,0 +1,14 @@
+figure {
+  background: var(--secondary-lighter);
+  border: 1px solid var(--secondary-light);
+  border-radius: var(--border-radius);
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.875rem;
+  font-style: italic;
+}
