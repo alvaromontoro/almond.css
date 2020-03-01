@@ -1,0 +1,14 @@
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+  margin: 1rem 0;
+  max-width: 100%;
+  overflow: auto;
+
+  & > code {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 1rem;
+  }
+}

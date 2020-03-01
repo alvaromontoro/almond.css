@@ -444,6 +444,13 @@ blockquote {
   blockquote > :last-child {
     margin-bottom: 0; }
 
+code {
+  background: var(--secondary-lighter);
+  color: var(--secondary);
+  font-family: monospace, monospace;
+  font-size: 1em;
+  font-weight: var(--font-weight-normal); }
+
 details {
   border: 1px solid var(--secondary-light);
   border-radius: var(--border-radius);
@@ -531,6 +538,18 @@ p {
   margin: 1rem 0;
   max-width: 80ch; }
 
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+  margin: 1rem 0;
+  max-width: 100%;
+  overflow: auto; }
+  pre > code {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 1rem; }
+
 progress {
   max-width: 100%;
   min-width: 15rem; }
@@ -543,6 +562,11 @@ q {
   q::after {
     content: close-quote;
     font-style: normal; }
+
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+  font-weight: var(--font-weight-normal); }
 
 small {
   font-size: 0.75em; }
@@ -559,3 +583,9 @@ sup {
 
 sub {
   bottom: -0.25em; }
+
+var {
+  font-family: monospace, monospace;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: var(--font-weight-normal); }
