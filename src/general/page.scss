@@ -12,3 +12,11 @@ body {
   font-size: 1rem;
   margin: 1rem;
 }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
