@@ -21,7 +21,9 @@ You can see the [demo in this repo running on RawGit](https://ghcdn.rawgit.org/a
 
 We based the theming on CSS variables and HSL colors. HSL allows to define a color based on three parameters: Hue, Saturation, and Lightness. Provide a primary and secondary colors using HSL, and see the demo page change automatically.
 
-Some values that you can specify:
+The default primary color is a dark pale blue, and the default secondary color is a medium gray.
+
+Some values that devs can specify:
 
 | Variable | Description | Default Value |
 |----------|-------------|---------------|
