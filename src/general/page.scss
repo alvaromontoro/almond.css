@@ -12,6 +12,18 @@ html {
 
 body {
   font-size: 1rem;
-  margin: 0;
+  margin: auto auto;
   padding: 1rem;
+}
+
+@media all and (min-width: 1024px) {
+  body {
+    max-width: 920px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  body {
+    max-width: 1080px;
+  }
 }
