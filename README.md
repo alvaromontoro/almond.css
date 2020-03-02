@@ -16,3 +16,26 @@ You can see the [demo in this repo running on RawGit](https://ghcdn.rawgit.org/a
 - Responsive, accessible and usable.
 - Lightweight (3KB gzipped).
 - Simple but elegant.
+
+## Theming
+
+We based the theming on CSS variables and HSL colors. HSL allows to define a color based on three parameters: Hue, Saturation, and Lightness. Provide a primary and secondary colors using HSL, and see the demo page change automatically.
+
+Some values that you can specify:
+
+| Variable | Description | Default Value |
+|----------|-------------|---------------|
+| `--primaryH` | Primary color hue value | 210 |
+| `--primaryS` | Primary color saturation value | 50% |
+| `--primaryL` | Prumary color lightness value | 40% |
+| `--primary-bg` | Primary color background | white |
+| `--secondaryH` | Primary color hue value | 0 |
+| `--secondaryS` | Primary color saturation value | 0% |
+| `--secondaryL` | Prumary color lightness value | 13% |
+| `--secondary-bg` | Primary color background | white |
+| `--font-family` | Set of fonts for the text | Helvetica, Arial, sans-serif |
+| `--font-size-root` | Default font size (root) | 16px |
+| `--font-weight-bold` | Font weight value (bold text) | 700 |
+| `--font-weight-normal` | Font weight value (normal text) | 400 |
+| `--font-weight-thin` | Font weight value (thin text) | 200 |
+| `--border-radius` | Border radius | 2px |
