@@ -150,7 +150,7 @@ input[type="submit"] {
   cursor: pointer;
   display: inline-block;
   font-size: 0.8rem;
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
   min-height: 2.5rem;
   max-width: auto;
   min-width: auto;
@@ -243,7 +243,7 @@ select[multiple] {
 optgroup {
   border: 0;
   border-radius: 0;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bolder);
   padding: 0.5rem;
 }
 
@@ -251,7 +251,7 @@ option {
   border: 0;
   border-radius: 0;
   display: flex;
-  font-weight: var(--font-weight-thin);
+  font-weight: var(--font-weight-normal);
   align-items: center;
   justify-content: flex-start;
 

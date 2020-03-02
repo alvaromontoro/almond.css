@@ -37,7 +37,8 @@ Some values that devs can specify:
 | `--secondary-bg` | Primary color background | white |
 | `--font-family` | Set of fonts for the text | Helvetica, Arial, sans-serif |
 | `--font-size-root` | Default font size (root) | 16px |
-| `--font-weight-bold` | Font weight value (bold text) | 700 |
-| `--font-weight-normal` | Font weight value (normal text) | 400 |
-| `--font-weight-thin` | Font weight value (thin text) | 200 |
+| `--font-weight-bolder` | Font weight value (bolder text) | 700 |
+| `--font-weight-bold` | Font weight value (bold text) | 400 |
+| `--font-weight-normal` | Font weight value (normal text) | 200 |
+| `--font-weight-thin` | Font weight value (thin text) | 100 |
 | `--border-radius` | Border radius | 2px |

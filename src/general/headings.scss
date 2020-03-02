@@ -5,7 +5,7 @@ h4,
 h5,
 h6 {
   color: var(--primary);
-  font-weight: var(--font-weight-thin);
+  font-weight: var(--font-weight-normal);
   margin: 1rem 0;
 }
 
@@ -27,12 +27,12 @@ h4 {
 
 h5 {
   font-size: 1.25rem;
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
 }
 
 h6 {
   font-size: 1.125rem;
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
 }
 
 // hgroup is obsolete. Added because many browsers still support it

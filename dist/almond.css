@@ -30,9 +30,10 @@
   /* Font */
   --font-family: Helvetica, Arial, sans-serif;
   --font-size-root: 16px;
-  --font-weight-bold: 700;
-  --font-weight-normal: 400;
-  --font-weight-thin: 200;
+  --font-weight-bolder: 700;
+  --font-weight-bold: 400;
+  --font-weight-normal: 200;
+  --font-weight-thin: 100;
   /* Status */
   --error: #d00;
   --warning: #ec0;
@@ -56,7 +57,7 @@ html {
   color: var(--secondary);
   font-family: var(--font-family);
   font-size: var(--font-size-root);
-  font-weight: var(--font-weight-thin);
+  font-weight: var(--font-weight-normal);
   margin: 0;
   padding: 0; }
 
@@ -80,7 +81,7 @@ h4,
 h5,
 h6 {
   color: var(--primary);
-  font-weight: var(--font-weight-thin);
+  font-weight: var(--font-weight-normal);
   margin: 1rem 0; }
 
 h1 {
@@ -97,11 +98,11 @@ h4 {
 
 h5 {
   font-size: 1.25rem;
-  font-weight: var(--font-weight-normal); }
+  font-weight: var(--font-weight-bold); }
 
 h6 {
   font-size: 1.125rem;
-  font-weight: var(--font-weight-normal); }
+  font-weight: var(--font-weight-bold); }
 
 hgroup {
   border-left: 5px solid var(--primary);
@@ -175,7 +176,7 @@ th {
   vertical-align: top; }
 
 th {
-  font-weight: var(--font-weight-bold); }
+  font-weight: var(--font-weight-bolder); }
 
 input:not([type="file"]),
 optgroup,
@@ -316,7 +317,7 @@ input[type="submit"] {
   cursor: pointer;
   display: inline-block;
   font-size: 0.8rem;
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
   min-height: 2.5rem;
   max-width: auto;
   min-width: auto;
@@ -392,14 +393,14 @@ select[multiple] {
 optgroup {
   border: 0;
   border-radius: 0;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bolder);
   padding: 0.5rem; }
 
 option {
   border: 0;
   border-radius: 0;
   display: flex;
-  font-weight: var(--font-weight-thin);
+  font-weight: var(--font-weight-normal);
   align-items: center;
   justify-content: flex-start; }
   option:hover {
@@ -412,7 +413,7 @@ a:visited,
 a:active,
 a:focus {
   color: var(--primary);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
   text-decoration: underline; }
 
 a:hover {
@@ -464,7 +465,7 @@ address {
 
 b,
 strong {
-  font-weight: var(--font-weight-bold); }
+  font-weight: var(--font-weight-bolder); }
 
 blockquote {
   background-color: var(--secondary-transparent);
@@ -499,7 +500,7 @@ code {
   display: inline-block;
   font-family: monospace, monospace;
   font-size: 1em;
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
   padding: 0 0.25rem; }
 
 details {
@@ -515,7 +516,7 @@ details {
 
 dfn {
   font-style: italic;
-  font-weight: var(--font-weight-normal); }
+  font-weight: var(--font-weight-bold); }
 
 dl {
   margin: 1rem 0;
@@ -525,7 +526,7 @@ dl {
   max-width: 80ch; }
 
 dt {
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
   margin-top: 1rem; }
 
 dd {
@@ -617,7 +618,7 @@ q {
 samp {
   font-family: monospace, monospace;
   font-size: 1em;
-  font-weight: var(--font-weight-normal); }
+  font-weight: var(--font-weight-bold); }
 
 small {
   font-size: 0.75em; }
@@ -639,4 +640,4 @@ var {
   font-family: monospace, monospace;
   font-size: 1em;
   font-style: normal;
-  font-weight: var(--font-weight-normal); }
+  font-weight: var(--font-weight-bold); }
