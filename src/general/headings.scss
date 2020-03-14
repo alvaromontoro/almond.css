@@ -6,7 +6,7 @@ h5,
 h6 {
   color: var(--primary);
   font-weight: var(--font-weight-normal);
-  margin: 1rem 0;
+  margin: var(--heading-margin);
 }
 
 h1 {
@@ -39,7 +39,7 @@ h6 {
 hgroup {
   border-left: 5px solid var(--primary);
   display: block;
-  margin: 1rem 0;
+  margin: var(--heading-margin);
   padding-left: 1rem;
 
   h1,

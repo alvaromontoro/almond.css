@@ -42,4 +42,5 @@ Some values that devs can specify:
 | `--font-weight-normal` | Font weight value (normal text) | 200 |
 | `--font-weight-thin` | Font weight value (thin text) | 100 |
 | `--line-height` | Line-height of paragraphs and lists | 1.75rem |
+| `--heading-margin` | Margin applied to the headings and heading groups | 1.5rem 0 1rem |
 | `--border-radius` | Border radius | 2px |
