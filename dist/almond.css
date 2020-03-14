@@ -132,7 +132,7 @@ ol {
 
 li {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
   max-width: 80ch;
   max-width: calc(80ch - 3rem); }
 
@@ -568,8 +568,7 @@ hr {
 
 img {
   border: 0;
-  max-width: 100%;
-  overflow: hidden; }
+  max-width: 100%; }
 
 kbd {
   background-color: var(--secondary-lighter);
@@ -588,7 +587,7 @@ mark {
 
 p {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
   margin: 1rem 0;
   max-width: 80ch; }
 
