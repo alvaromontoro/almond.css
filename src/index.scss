@@ -10,7 +10,6 @@
 
 // general stylings
 @import "./general/pseudo.scss";
-@import "./general/page.scss";
 @import "./general/headings.scss";
 @import "./general/lists.scss";
 @import "./general/multimedia.scss";
@@ -18,6 +17,8 @@
 @import "./general/inputs.scss";
 
 // tag specific styles
+@import "./tags/html.scss";
+@import "./tags/body.scss";
 @import "./tags/a.scss";
 @import "./tags/abbr.scss";
 @import "./tags/address.scss";
