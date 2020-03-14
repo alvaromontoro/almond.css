@@ -21,6 +21,7 @@
   --font-weight-bold: 400;
   --font-weight-normal: 200;
   --font-weight-thin: 100;
+  --line-height: 1.75rem;
   /* Inputs */
   --border-radius: 2px;
   /* Status */
@@ -132,7 +133,7 @@ ol {
 
 li {
   font-size: 1rem;
-  line-height: 1.75rem;
+  line-height: var(--line-height);
   max-width: 80ch;
   max-width: calc(80ch - 3rem); }
 
@@ -587,7 +588,7 @@ mark {
 
 p {
   font-size: 1rem;
-  line-height: 1.75rem;
+  line-height: var(--line-height);
   margin: 1rem 0;
   max-width: 80ch; }
 

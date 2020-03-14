@@ -41,4 +41,5 @@ Some values that devs can specify:
 | `--font-weight-bold` | Font weight value (bold text) | 400 |
 | `--font-weight-normal` | Font weight value (normal text) | 200 |
 | `--font-weight-thin` | Font weight value (thin text) | 100 |
+| `--line-height` | Line-height of paragraphs and lists | 1.75rem |
 | `--border-radius` | Border radius | 2px |
