@@ -120,12 +120,6 @@ hgroup {
   hgroup h6 {
     margin: 0; }
 
-img,
-svg:not(:root) {
-  border: 0;
-  max-width: 100%;
-  overflow: hidden; }
-
 ul,
 ol {
   margin: 1rem 0;
@@ -572,6 +566,11 @@ hr {
   max-width: 15rem;
   width: 50%; }
 
+img {
+  border: 0;
+  max-width: 100%;
+  overflow: hidden; }
+
 kbd {
   background-color: var(--secondary-lighter);
   border: 1px solid var(--secondary-light);
@@ -638,6 +637,11 @@ sup {
 
 sub {
   bottom: -0.25em; }
+
+svg:not(:root) {
+  border: 0;
+  max-width: 100%;
+  overflow: hidden; }
 
 var {
   font-family: monospace, monospace;
