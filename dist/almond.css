@@ -47,6 +47,30 @@
   --secondary-light: hsl(var(--secondaryH), var(--secondaryS), 75%);
   --secondary-lighter: hsl(var(--secondaryH), var(--secondaryS), 96%); }
 
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: var(--secondary-bg);
+  color: var(--secondary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-root);
+  font-weight: var(--font-weight-normal);
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 1rem;
+  margin: auto auto;
+  padding: 1rem; }
+
+@media all and (min-width: 1024px) {
+  body {
+    max-width: 920px; } }
+
+@media all and (min-width: 1200px) {
+  body {
+    max-width: 1080px; } }
+
 :focus {
   outline: 1px dashed var(--primary);
   outline-offset: 2px; }
@@ -113,13 +137,6 @@ li {
   line-height: var(--line-height);
   max-width: 80ch;
   max-width: calc(80ch - 3rem); }
-
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline;
-  max-width: 100%; }
 
 table {
   background-color: var(--secondary-bg);
@@ -377,30 +394,6 @@ option {
     border: 0;
     background: var(--primary-lighter); }
 
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  background-color: var(--secondary-bg);
-  color: var(--secondary);
-  font-family: var(--font-family);
-  font-size: var(--font-size-root);
-  font-weight: var(--font-weight-normal);
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-size: 1rem;
-  margin: auto auto;
-  padding: 1rem; }
-
-@media all and (min-width: 1024px) {
-  body {
-    max-width: 920px; } }
-
-@media all and (min-width: 1200px) {
-  body {
-    max-width: 1080px; } }
-
 a,
 a:link,
 a:visited,
@@ -495,6 +488,11 @@ blockquote {
     text-indent: 1rem; }
   blockquote > :last-child {
     margin-bottom: 0; }
+
+canvas {
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: 100%; }
 
 code {
   background: var(--secondary-lighter);
@@ -609,8 +607,10 @@ pre {
     padding: 1rem; }
 
 progress {
+  display: inline-block;
   max-width: 100%;
-  min-width: 15rem; }
+  min-width: 15rem;
+  vertical-align: baseline; }
 
 q {
   font-style: italic; }
@@ -652,3 +652,8 @@ var {
   font-size: 1em;
   font-style: normal;
   font-weight: var(--font-weight-bold); }
+
+video {
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: 100%; }

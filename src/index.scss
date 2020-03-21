@@ -8,23 +8,25 @@
 // variables
 @import "./general/variables.scss";
 
+// main page styles
+@import "./tags/html.scss";
+@import "./tags/body.scss";
+
 // general stylings
 @import "./general/pseudo.scss";
 @import "./general/headings.scss";
 @import "./general/lists.scss";
-@import "./general/multimedia.scss";
 @import "./general/tables.scss";
 @import "./general/inputs.scss";
 
 // tag specific styles
-@import "./tags/html.scss";
-@import "./tags/body.scss";
 @import "./tags/a.scss";
 @import "./tags/abbr.scss";
 @import "./tags/address.scss";
 @import "./tags/audio.scss";
 @import "./tags/b.scss";
 @import "./tags/blockquote.scss";
+@import "./tags/canvas.scss";
 @import "./tags/code.scss";
 @import "./tags/details.scss";
 @import "./tags/dfn.scss";
@@ -44,3 +46,4 @@
 @import "./tags/sub.scss";
 @import "./tags/svg.scss";
 @import "./tags/var.scss";
+@import "./tags/video.scss";
