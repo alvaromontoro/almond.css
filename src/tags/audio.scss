@@ -1,7 +1,10 @@
-canvas,
-progress,
-video {
+audio {
   display: inline-block;
   vertical-align: baseline;
   max-width: 100%;
+
+  &:not([controls]) {
+    display: none;
+    height: 0;
+  }
 }

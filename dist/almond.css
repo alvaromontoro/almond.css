@@ -114,17 +114,12 @@ li {
   max-width: 80ch;
   max-width: calc(80ch - 3rem); }
 
-audio,
 canvas,
 progress,
 video {
   display: inline-block;
   vertical-align: baseline;
   max-width: 100%; }
-
-audio:not([controls]) {
-  display: none;
-  height: 0; }
 
 table {
   background-color: var(--secondary-bg);
@@ -461,6 +456,14 @@ address {
   display: block;
   font-style: normal;
   margin: 1rem 0; }
+
+audio {
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: 100%; }
+  audio:not([controls]) {
+    display: none;
+    height: 0; }
 
 b,
 strong {
