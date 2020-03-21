@@ -1,0 +1,16 @@
+// hgroup is obsolete. Added because many browsers still support it
+hgroup {
+  border-left: 5px solid var(--primary);
+  display: block;
+  margin: var(--heading-margin);
+  padding-left: 1rem;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+}

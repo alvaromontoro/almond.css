@@ -109,19 +109,6 @@ h6 {
   font-size: 1.125rem;
   font-weight: var(--font-weight-bold); }
 
-hgroup {
-  border-left: 5px solid var(--primary);
-  display: block;
-  margin: var(--heading-margin);
-  padding-left: 1rem; }
-  hgroup h1,
-  hgroup h2,
-  hgroup h3,
-  hgroup h4,
-  hgroup h5,
-  hgroup h6 {
-    margin: 0; }
-
 ul,
 ol {
   margin: 1rem 0;
@@ -559,6 +546,19 @@ figure {
 figcaption {
   font-size: 0.875rem;
   font-style: italic; }
+
+hgroup {
+  border-left: 5px solid var(--primary);
+  display: block;
+  margin: var(--heading-margin);
+  padding-left: 1rem; }
+  hgroup h1,
+  hgroup h2,
+  hgroup h3,
+  hgroup h4,
+  hgroup h5,
+  hgroup h6 {
+    margin: 0; }
 
 hr {
   border: 0;
