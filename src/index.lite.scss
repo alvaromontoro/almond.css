@@ -1,0 +1,50 @@
+/************************************************************/
+/*                        Almond.CSS                        */
+/************************************************************/
+/** Author:  Alvaro Montoro                                **/
+/** Project: https://github.com/alvaromontoro/almond.css   **/
+/************************************************************/
+
+// variables
+@import "./general/variables.scss";
+
+// main page styles
+@import "./tags/html.scss";
+@import "./tags/body.scss";
+
+// general stylings
+@import "./general/pseudo.scss";
+@import "./general/headings.scss";
+@import "./general/lists.scss";
+@import "./general/tables.scss";
+@import "./general/inputs.scss";
+
+// tag specific styles
+@import "./tags/a.scss";
+@import "./tags/abbr.scss";
+@import "./tags/address.scss";
+@import "./tags/audio.scss";
+@import "./tags/b.scss";
+@import "./tags/blockquote.scss";
+@import "./tags/canvas.scss";
+@import "./tags/code.scss";
+@import "./tags/details.scss";
+@import "./tags/dfn.scss";
+@import "./tags/dl.scss";
+@import "./tags/fieldset.scss";
+@import "./tags/figure.scss";
+@import "./tags/hgroup.scss";
+@import "./tags/hr.scss";
+@import "./tags/img.scss";
+@import "./tags/kbd.scss";
+@import "./tags/mark.scss";
+@import "./tags/p.scss";
+@import "./tags/pre.scss";
+@import "./tags/progress.scss";
+@import "./tags/q.scss";
+@import "./tags/samp.scss";
+@import "./tags/small.scss";
+@import "./tags/sub.scss";
+@import "./tags/svg.scss";
+@import "./tags/var.scss";
+@import "./tags/video.scss";
