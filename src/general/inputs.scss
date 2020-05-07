@@ -17,6 +17,7 @@ select {
   max-width: 100%;
   min-width: 15rem;
   text-transform: none;
+  vertical-align: bottom;
 
   &:invalid {
     border-color: var(--error);
