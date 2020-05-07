@@ -169,7 +169,8 @@ select {
   padding: 0 0.5rem;
   max-width: 100%;
   min-width: 15rem;
-  text-transform: none; }
+  text-transform: none;
+  vertical-align: bottom; }
   input:not([type="file"]):invalid,
   optgroup:invalid,
   option:invalid,
