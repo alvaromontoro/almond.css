@@ -586,7 +586,7 @@ a[href^="tel:"],
 a[href^="sms:"],
 a[href^="file:"],
 a[rel~="external"],
-a[rel="bookmark"],
+a[rel~="bookmark"],
 a[download] {
   background-repeat: no-repeat;
   background-size: 1rem 1rem;
@@ -612,7 +612,7 @@ a[download] {
 a[rel~="external"] {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M28,4 39,4 39,15 M39,4 23,20 M28,9 7,9 7,34 35,34 35,15' fill='none' stroke='%23999' stroke-width='2'/></svg>"); }
 
-a[rel="bookmark"] {
+a[rel~="bookmark"] {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M5,2 35,2 35,38 20,25 5,38Z' fill='none' stroke='%23999' stroke-width='2'/></svg>"); }
 
 /* input images */
