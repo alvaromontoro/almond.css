@@ -2,7 +2,7 @@
 
 Almond.CSS is a collection of class-less CSS styles to make simple websites look better.
 
-Use the different HTML5 semantic tags on your website, include the library in your project, and let CSS and the browser work their magic. Just combine your HTML and Almond CSS (no JavaScript needed.) You can see a [demo in this repo running on RawGit](https://ghcdn.rawgit.org/alvaromontoro/almond.css/master/demo/index.html).
+Use the different HTML5 semantic tags on your website, include the library in your project, and let CSS and the browser work their magic. Just combine your HTML and Almond CSS (no JavaScript needed.) You can see a [demo in this repo running](https://alvaromontoro.github.io/almond.css/).
 
 The main goals of this project are:
 
