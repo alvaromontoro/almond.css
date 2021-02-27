@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/alvaromontoro/almond.css",
   "devDependencies": {
-    "node-sass": "4.13.1"
+    "node-sass": "5.0.0"
   }
 }
