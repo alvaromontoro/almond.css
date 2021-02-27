@@ -519,6 +519,9 @@ img {
   border: 0;
   max-width: 100%; }
 
+ins {
+  text-decoration: underline var(--primary); }
+
 kbd {
   background-color: var(--secondary-lighter);
   border: 1px solid var(--secondary-light);
