@@ -339,7 +339,8 @@ select[multiple] {
   select[multiple] option:checked {
     background: var(--secondary-light) linear-gradient(0deg, var(--secondary-light) 0%, var(--secondary-light) 100%); }
   select[multiple]:focus option:checked {
-    background: var(--primary) linear-gradient(0deg, var(--primary) 0%, var(--primary) 100%); }
+    background: var(--primary) linear-gradient(0deg, var(--primary) 0%, var(--primary) 100%);
+    color: var(--primary-bg); }
 
 optgroup {
   border: 0;
@@ -432,6 +433,9 @@ code {
   font-size: 1em;
   font-weight: var(--font-weight-bold);
   padding: 0 0.25rem; }
+
+del {
+  text-decoration: line-through var(--primary); }
 
 details {
   border: 1px solid var(--secondary-light);
