@@ -439,7 +439,6 @@ del {
 
 details {
   border: 1px solid var(--secondary-light);
-  border-radius: var(--border-radius);
   display: block;
   padding: 0 1rem; }
   details summary {
@@ -447,6 +446,15 @@ details {
     padding: 1rem; }
   details[open] summary {
     border-bottom: 1px solid var(--secondary-light); }
+  details + details {
+    border-top: 0;
+    border-radius: 0; }
+  details:first-of-type {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius); }
+  details:last-of-type {
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius); }
 
 dfn {
   font-style: italic;
