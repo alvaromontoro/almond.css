@@ -257,8 +257,9 @@ input[type="submit"] {
   display: inline-block;
   font-size: 0.8rem;
   font-weight: var(--font-weight-bold);
-  min-height: 2.5rem;
+  margin: 0;
   max-width: auto;
+  min-height: 2.5rem;
   min-width: auto;
   overflow: visible;
   padding: 0 1rem;
