@@ -426,6 +426,10 @@ canvas {
   vertical-align: baseline;
   max-width: 100%; }
 
+cite {
+  font-style: italic;
+  font-weight: var(--font-weight-thin); }
+
 code {
   background: var(--secondary-lighter);
   color: var(--secondary);
