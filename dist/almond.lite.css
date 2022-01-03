@@ -375,7 +375,9 @@ a:hover {
 
 abbr[title] {
   border-bottom: 0;
-  text-decoration: underline dashed var(--primary); }
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: var(--primary); }
 
 address {
   display: block;
@@ -440,7 +442,8 @@ code {
   padding: 0 0.25rem; }
 
 del {
-  text-decoration: line-through var(--primary); }
+  text-decoration: line-through;
+  text-decoration-color: var(--primary); }
 
 details {
   border: 1px solid var(--secondary-light);
@@ -533,7 +536,8 @@ img {
   max-width: 100%; }
 
 ins {
-  text-decoration: underline var(--primary); }
+  text-decoration: underline;
+  text-decoration-color: var(--primary); }
 
 kbd {
   background-color: var(--secondary-lighter);
@@ -584,7 +588,8 @@ q {
     font-style: normal; }
 
 s {
-  text-decoration: line-through var(--primary); }
+  text-decoration: line-through;
+  text-decoration-color: var(--primary); }
 
 samp {
   font-family: monospace, monospace;
