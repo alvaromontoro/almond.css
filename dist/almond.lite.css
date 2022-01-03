@@ -612,6 +612,11 @@ svg:not(:root) {
   max-width: 100%;
   overflow: hidden; }
 
+u {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--error); }
+
 var {
   font-family: monospace, monospace;
   font-size: 1em;
