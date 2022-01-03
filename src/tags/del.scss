@@ -1,3 +1,4 @@
 del {
-  text-decoration: line-through var(--primary);
+  text-decoration: line-through;
+  text-decoration-color: var(--primary);
 }
