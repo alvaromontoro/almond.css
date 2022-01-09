@@ -1,0 +1,38 @@
+[role="progressbar"] {
+  --value: 50;
+  --thick: 50%;
+  --medium: 58%;
+  --thin: 67%;
+  --thickness: var(--medium);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  font-size: 2em;
+  overflow: hidden;
+  place-items: center;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    background: conic-gradient(var(--primary) calc(var(--value) * 1%), #0000 0);
+    background-color: var(--primary-lighter);
+    height: 100%;
+    left: 0;
+    -webkit-mask: radial-gradient(#0000 var(--thickness), #000 0);
+    mask: radial-gradient(#0000 var(--thickness), #000 0);
+    position: absolute;
+    top: 0;
+    transition: background-color 0.5s;
+    width: 100%;
+  }
+
+  &::after {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) "%";
+  }
+
+  &:hover::before {
+    background-color: var(--primary-light);
+  }
+}
