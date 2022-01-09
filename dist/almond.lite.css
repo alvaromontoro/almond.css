@@ -587,7 +587,8 @@ q {
     content: close-quote;
     font-style: normal; }
 
-s {
+s,
+strike {
   text-decoration: line-through;
   text-decoration-color: var(--primary); }
 
