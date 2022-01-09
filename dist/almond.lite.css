@@ -555,7 +555,8 @@ mark {
   color: var(--secondary-darker); }
 
 output {
-  font-weight: var(--font-weight-bold); }
+  font-weight: var(--font-weight-bold);
+  unicode-bidi: isolate; }
 
 p {
   font-size: 1rem;
