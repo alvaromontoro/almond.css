@@ -434,6 +434,45 @@
           </section>
         </section>
         <section>
+          <h3>Dialog</h3>
+          <dialog id="dialog-1">
+            <div>This is a test dialog</div>
+            <button onclick="document.querySelector('#dialog-1').removeAttribute('open');">Close Dialog</button>
+          </dialog>
+          <dialog id="dialog-2">
+            <h2>Dialog with heading</h2>
+            <div>This is a test dialog</div>
+            <button onclick="document.querySelector('#dialog-2').removeAttribute('open');">Close Dialog</button>
+          </dialog>
+          <dialog id="dialog-3">
+            <div>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+            </div>
+            <button onclick="document.querySelector('#dialog-3').removeAttribute('open');">Close Dialog</button>
+          </dialog>
+          <button onclick="document.querySelector('#dialog-1').setAttribute('open', '');">Open Dialog</button>
+          <button onclick="document.querySelector('#dialog-2').setAttribute('open', '');">Open Dialog with Heading</button>
+          <button onclick="document.querySelector('#dialog-3').setAttribute('open', '');">Open Dialog with Long Text</button>
+        </section>
+        <section>
           <h3>Progress</h3>
           <progress> 70% </progress><br />
           <progress max="100" value="70"> 70% </progress>
