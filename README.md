@@ -87,3 +87,11 @@ Some values that devs can specify:
 | `--line-height`        | Line-height of paragraphs and lists               | `1.75rem`                      |
 | `--heading-margin`     | Margin applied to the headings and heading groups | `1.5rem 0 1rem`                |
 | `--border-radius`      | Border radius                                     | `2px`                          |
+
+## Widgets
+
+By combining some "not-too common" HTML attributes with some CSS variables, we can generate a series of widgets without the need to use JavaScript or HTML classes.
+
+Here is a list of the widgets available at the moment:
+
+- Circular progress bar
