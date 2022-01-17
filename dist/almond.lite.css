@@ -608,6 +608,10 @@ mark {
   border-right: 4px solid var(--primary-bright);
   color: var(--secondary-darker); }
 
+output {
+  font-weight: var(--font-weight-bold);
+  unicode-bidi: isolate; }
+
 p {
   font-size: 1rem;
   line-height: var(--line-height);
@@ -621,10 +625,13 @@ pre {
   max-width: 100%;
   overflow: auto; }
   pre > code {
+    box-sizing: border-box;
     display: block;
     font-size: 1rem;
     line-height: 1.5rem;
-    padding: 1rem; }
+    min-width: 100%;
+    padding: 1rem;
+    width: min-content; }
 
 progress {
   display: inline-block;
@@ -641,7 +648,8 @@ q {
     content: close-quote;
     font-style: normal; }
 
-s {
+s,
+strike {
   text-decoration: line-through;
   text-decoration-color: var(--primary); }
 
