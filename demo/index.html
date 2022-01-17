@@ -9,7 +9,7 @@
     <meta name="keywords" content="AlMonD.CSS,demo,classless,styles" />
     <meta name="description" content="Demo page for AlMonD.CSS" />
 
-    <link rel="stylesheet" href="./dist/almond.css" />
+    <link rel="stylesheet" href="../dist/almond.css" />
     <link rel="stylesheet" href="./static/demo.css" />
   </head>
   <body>
@@ -38,13 +38,14 @@
             but you may have <a href="#">some links with the a tag</a>; also you can
             <em>add emphasis with em</em> or <i>also with i</i>; Highlight the words by
             <strong>using strong</strong> or just <b>bring attention with the b tag</b>; of course, 
-            you can <s>strikethrough text</s>, and the <code>&lt;u&gt;</code> tag now stands for
+            you can <s>strikethrough text</s> (or the deprecated tag in HTML5
+            <strike>strike</strike>), and the <code>&lt;u&gt;</code> tag now stands for
             <u>unarticullated-text</u> instead of underline; abbreviations are great, as you may have
             <abbr title="too many abbreviations">TMA</abbr>; <code>inline code</code> is cool too;
             You can also add line breask with br...<br />
             <mark>Highlight text with mark</mark> or display a <kbd>Key</kbd>. You can also have
             <q>inline quotes with q</q>, or <samp>results from an operation with samp</samp> or a
-            <var>variable</var>, also there's <small>small text</small>, text
+            <var>variable</var>, or an <output>output</output>, also there's <small>small text</small>, text
             with<sup>superscript</sup>, or text with<sub>subscript</sub>... not to mention you can
             have time too. For example, this paragraph was originally written in <time>2020</time>.
             Not to forget about <dfn>definitions</dfn>! Also <del>del was deleted</del> and 
@@ -434,6 +435,49 @@
           </section>
         </section>
         <section>
+          <h3>Dialog</h3>
+          <dialog id="dialog-1">
+            <div>This is a test dialog</div>
+            <div>
+              <button onclick="document.querySelector('#dialog-1').removeAttribute('open');">Close Dialog</button>
+            </div>
+          </dialog>
+          <dialog id="dialog-2">
+            <h2>Dialog with heading</h2>
+            <div>This is a test dialog</div>
+            <div>
+              <button onclick="document.querySelector('#dialog-2').removeAttribute('open');">Close Dialog</button>
+            </div>
+          </dialog>
+          <dialog id="dialog-3">
+            <div>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+              <p>This is a test dialog with a long text.</p>
+            </div>
+            <button onclick="document.querySelector('#dialog-3').removeAttribute('open');">Close Dialog</button>
+          </dialog>
+          <button onclick="document.querySelector('#dialog-1').setAttribute('open', '');">Open Dialog</button>
+          <button onclick="document.querySelector('#dialog-2').setAttribute('open', '');">Open Dialog with Heading</button>
+          <button onclick="document.querySelector('#dialog-3').setAttribute('open', '');">Open Dialog with Long Text</button>
+        </section>
+        <section>
           <h3>Progress</h3>
           <progress> 70% </progress><br />
           <progress max="100" value="70"> 70% </progress>
@@ -463,6 +507,7 @@ pre
           <h4>Pre with Code</h4>
           <pre><code>#include &lt;stdio.h&gt;
 
+// this is a line with really long text to show that now the gray background goes all the way, instead of limiting to the wisth of the main.
 int main(void) {
   printf("Hello World");
   return 0;

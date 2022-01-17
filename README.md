@@ -1,6 +1,6 @@
 # Almond.CSS
 
-Almond.CSS is a collection of class-less CSS styles to make simple websites look better.
+Almond.CSS is a collection of class-less CSS styles to make simple websites look better. Almond.CSS helps in two ways: it normalizes the CSS styles to provide similar experience cross-browser, and it spices things a little by adding custom styles (that can be personalized!) 
 
 Use the different HTML5 semantic tags on your website, include the library in your project, and let CSS and the browser work their magic. Just combine your HTML and Almond CSS (no JavaScript needed.) You can see a [demo in this repo running](https://alvaromontoro.github.io/almond.css/).
 
