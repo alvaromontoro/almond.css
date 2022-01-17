@@ -6,9 +6,12 @@ pre {
   overflow: auto;
 
   & > code {
+    box-sizing: border-box;
     display: block;
     font-size: 1rem;
     line-height: 1.5rem;
+    min-width: 100%;
     padding: 1rem;
+    width: min-content;
   }
 }
