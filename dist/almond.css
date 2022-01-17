@@ -554,6 +554,10 @@ mark {
   border-right: 4px solid var(--primary-bright);
   color: var(--secondary-darker); }
 
+output {
+  font-weight: var(--font-weight-bold);
+  unicode-bidi: isolate; }
+
 p {
   font-size: 1rem;
   line-height: var(--line-height);
@@ -590,7 +594,8 @@ q {
     content: close-quote;
     font-style: normal; }
 
-s {
+s,
+strike {
   text-decoration: line-through;
   text-decoration-color: var(--primary); }
 
