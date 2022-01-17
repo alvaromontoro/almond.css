@@ -2,7 +2,7 @@
 
 Almond.CSS is a collection of class-less CSS styles to make simple websites look better. Almond.CSS helps in two ways: it normalizes the CSS styles to provide similar experience cross-browser, and it spices things a little by adding custom styles (that can be personalized!) 
 
-Use the different HTML5 semantic tags on your website, include the library in your project, and let CSS and the browser work their magic. Just combine your HTML and Almond CSS (no JavaScript needed.) You can see a [demo in this repo running](https://alvaromontoro.github.io/almond.css/).
+Use the different HTML5 semantic tags on your website, include the library in your project, and let CSS and the browser work their magic. Just combine your HTML and Almond CSS (no JavaScript needed.) You can see a [demo in this repo running](https://alvaromontoro.github.io/almond.css/demo/).
 
 The main goals of this project are:
 
@@ -87,3 +87,11 @@ Some values that devs can specify:
 | `--line-height`        | Line-height of paragraphs and lists               | `1.75rem`                      |
 | `--heading-margin`     | Margin applied to the headings and heading groups | `1.5rem 0 1rem`                |
 | `--border-radius`      | Border radius                                     | `2px`                          |
+
+## Widgets
+
+By combining some "not-too common" HTML attributes with some CSS variables, we can generate a series of widgets without the need to use JavaScript or HTML classes.
+
+Here is a list of the widgets available at the moment:
+
+- Circular progress bar
