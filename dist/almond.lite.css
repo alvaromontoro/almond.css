@@ -445,6 +445,60 @@ del {
   text-decoration: line-through;
   text-decoration-color: var(--primary); }
 
+dialog {
+  border: 1px solid var(--secondary-light);
+  border-radius: var(--border-radius);
+  display: none;
+  left: 50%;
+  margin: 0;
+  max-height: 80vh;
+  max-width: 80vw;
+  min-width: 20vw;
+  padding: 1rem;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; }
+  dialog[open] {
+    display: flex;
+    flex-direction: column; }
+  dialog::before {
+    content: "";
+    background: var(--secondary);
+    height: 100vmax;
+    left: 50%;
+    opacity: 0.33;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vmax;
+    z-index: -1; }
+  dialog::after {
+    content: "";
+    background: var(--primary-bg);
+    border-radius: var(--border-radius);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1; }
+  dialog > * {
+    max-height: 80vh;
+    overflow: auto; }
+  dialog > h1,
+  dialog > h2,
+  dialog > h3,
+  dialog > h4,
+  dialog > h5,
+  dialog > h6 {
+    border-bottom: 1px solid var(--secondary-light);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    color: var(--secondary);
+    font-size: 1.125rem;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 0.5rem 1rem; }
+
 details {
   border: 1px solid var(--secondary-light);
   display: block;
