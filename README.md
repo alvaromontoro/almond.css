@@ -1,6 +1,6 @@
 # Almond.CSS
 
-Almond.CSS is a collection of class-less CSS styles to make simple websites look better. Almond.CSS helps in two ways: it normalizes the CSS styles to provide similar experience cross-browser, and it spices things a little by adding custom styles (that can be personalized!) 
+Almond.CSS is a collection of class-less CSS styles to make simple websites look better. Almond.CSS helps in two ways: it normalizes the CSS styles to provide similar experience cross-browser, and it spices things a little by adding custom styles (that can be personalized!)
 
 Use the different HTML5 semantic tags on your website, include the library in your project, and let CSS and the browser work their magic. Just combine your HTML and Almond CSS (no JavaScript needed.) You can see a [demo in this repo running](https://alvaromontoro.github.io/almond.css/demo/).
 
@@ -74,10 +74,10 @@ Some values that devs can specify:
 | `--primaryS`           | Primary color saturation value                    | `50%`                          |
 | `--primaryL`           | Primary color lightness value                     | `40%`                          |
 | `--primary-bg`         | Primary color background                          | `white`                        |
-| `--secondaryH`         | Primary color hue value                           | `0`                            |
-| `--secondaryS`         | Primary color saturation value                    | `0%`                           |
-| `--secondaryL`         | Primary color lightness value                     | `13%`                          |
-| `--secondary-bg`       | Primary color background                          | `white`                        |
+| `--secondaryH`         | Secondary color hue value                         | `0`                            |
+| `--secondaryS`         | Secondary color saturation value                  | `0%`                           |
+| `--secondaryL`         | Secondary color lightness value                   | `13%`                          |
+| `--secondary-bg`       | Secondary color background                        | `white`                        |
 | `--font-family`        | Set of fonts for the text                         | `Helvetica, Arial, sans-serif` |
 | `--font-size-root`     | Default font size (root)                          | `16px`                         |
 | `--font-weight-bolder` | Font weight value (bolder text)                   | `700`                          |
