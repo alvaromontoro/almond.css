@@ -168,7 +168,6 @@ select {
   margin: 0;
   padding: 0 0.5rem;
   max-width: 100%;
-  min-width: 15rem;
   text-transform: none;
   vertical-align: bottom; }
   input:not([type="file"]):invalid,
@@ -202,6 +201,13 @@ select {
     display: none;
     background: none; }
 
+
+optgroup,
+option,
+textarea,
+select {
+  min-width: 15rem;
+}
 input:not([type="file"]):not([type="image"]):not(:invalid):not(:disabled):not([disabled]):not([readonly]):hover,
 textarea:not(:invalid):not(:disabled):not([disabled]):not([readonly]):hover,
 select:not(:invalid):not(:disabled):not([disabled]):not([readonly]):hover {
