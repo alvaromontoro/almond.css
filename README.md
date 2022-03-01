@@ -74,10 +74,10 @@ Some values that devs can specify:
 | `--primaryS`           | Primary color saturation value                    | `50%`                          |
 | `--primaryL`           | Primary color lightness value                     | `40%`                          |
 | `--primary-bg`         | Primary color background                          | `white`                        |
-| `--secondaryH`         | Primary color hue value                           | `0`                            |
-| `--secondaryS`         | Primary color saturation value                    | `0%`                           |
-| `--secondaryL`         | Primary color lightness value                     | `13%`                          |
-| `--secondary-bg`       | Primary color background                          | `white`                        |
+| `--secondaryH`         | Secondary color hue value                         | `0`                            |
+| `--secondaryS`         | Secondary color saturation value                  | `0%`                           |
+| `--secondaryL`         | Secondary color lightness value                   | `13%`                          |
+| `--secondary-bg`       | Secondary color background                        | `white`                        |
 | `--font-family`        | Set of fonts for the text                         | `Helvetica, Arial, sans-serif` |
 | `--font-size-root`     | Default font size (root)                          | `16px`                         |
 | `--font-weight-bolder` | Font weight value (bolder text)                   | `700`                          |
