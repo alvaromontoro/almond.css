@@ -5,14 +5,14 @@
   "main": "dist/almond.css",
   "scripts": {
     "build": "npm run build:raw && npm run build:min && npm run build:lite",
-    "build:raw": "node-sass src/index.scss dist/almond.css",
-    "build:min": "node-sass --output-style compressed src/index.scss dist/almond.min.css",
+    "build:raw": "sass --no-source-map src/index.scss dist/almond.css",
+    "build:min": "sass --no-source-map --style compressed src/index.scss dist/almond.min.css",
     "build:lite": "npm run build:lite:raw && npm run build:lite:min",
-    "build:lite:raw": "node-sass src/index.lite.scss dist/almond.lite.css",
-    "build:lite:min": "node-sass --output-style compressed src/index.lite.scss dist/almond.lite.min.css",
+    "build:lite:raw": "sass --no-source-map src/index.lite.scss dist/almond.lite.css",
+    "build:lite:min": "sass --no-source-map --style compressed src/index.lite.scss dist/almond.lite.min.css",
     "test": "cypress run",
     "test:open": "cypress open",
-    "watch": "node-sass -w src/index.scss dist/almond.css"
+    "watch": "sass -w src/index.scss dist/almond.css"
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/alvaromontoro/almond.css",
   "devDependencies": {
-    "node-sass": "^7.0.1",
-    "cypress": "^9.2.0"
+    "cypress": "^9.2.0",
+    "sass": "^1.49.9"
   }
 }
