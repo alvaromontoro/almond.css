@@ -18,6 +18,7 @@ select {
   min-width: 15rem;
   text-transform: none;
   vertical-align: bottom;
+  width: 15rem;
 
   &:invalid {
     border-color: var(--error);
@@ -39,6 +40,13 @@ select {
   }
 }
 
+input[type="button"],
+input[type="image"],
+input[type="reset"],
+input[type="submit"] {
+  width: auto;
+}
+
 input:not([type="file"]):not([type="image"]),
 textarea,
 select {
@@ -58,6 +66,7 @@ input[type="range"] {
 textarea {
   height: 5rem;
   line-height: 1.5rem;
+  min-height: 3rem;
   overflow: auto;
 }
 

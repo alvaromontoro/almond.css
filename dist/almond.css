@@ -170,7 +170,8 @@ select {
   max-width: 100%;
   min-width: 15rem;
   text-transform: none;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  width: 15rem; }
   input:not([type="file"]):invalid,
   optgroup:invalid,
   option:invalid,
@@ -202,6 +203,12 @@ select {
     display: none;
     background: none; }
 
+input[type="button"],
+input[type="image"],
+input[type="reset"],
+input[type="submit"] {
+  width: auto; }
+
 input:not([type="file"]):not([type="image"]):not(:invalid):not(:disabled):not([disabled]):not([readonly]):hover,
 textarea:not(:invalid):not(:disabled):not([disabled]):not([readonly]):hover,
 select:not(:invalid):not(:disabled):not([disabled]):not([readonly]):hover {
@@ -216,6 +223,7 @@ input[type="range"] {
 textarea {
   height: 5rem;
   line-height: 1.5rem;
+  min-height: 3rem;
   overflow: auto; }
 
 input[type="number"]::-webkit-inner-spin-button,
