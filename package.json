@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/alvaromontoro/almond.css",
   "devDependencies": {
-    "node-sass": "^7.0.1",
+    "node-sass": "^7.0.3",
     "cypress": "^9.2.0"
   }
 }
