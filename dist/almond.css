@@ -430,7 +430,7 @@ blockquote {
     content: no-close-quote; }
   blockquote > :first-child {
     margin-top: 0;
-    text-indent: 1rem; }
+    text-indent: 1.75rem; }
   blockquote > :last-child {
     margin-bottom: 0; }
 
