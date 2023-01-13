@@ -1,0 +1,43 @@
+input[type="checkbox"][role="switch"] {
+  --on: "On";
+  --off: "Off";
+  background: var(--secondary-light);
+  border-radius: 1rem;
+  height: 0.5rem;
+  margin-right: 2.5rem;
+  position: relative;
+  width: 2rem;
+
+  &::before {
+    content: "";
+    aspect-ratio: 1;
+    background: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    box-sizing: border-box;
+    left: -1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.25s;
+    width: 1rem;
+  }
+
+  &::after {
+    content: var(--off);
+    left: 2.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:checked {
+    &::before {
+      left: 50%;
+    }
+
+    &::after {
+      content: var(--on);
+    }
+  }
+}
