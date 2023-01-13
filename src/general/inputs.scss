@@ -17,7 +17,7 @@ select {
   max-width: 100%;
   min-width: 15rem;
   text-transform: none;
-  vertical-align: bottom;
+  vertical-align: middle;
   width: 15rem;
 
   &:invalid {
@@ -43,7 +43,9 @@ select {
 input[type="button"],
 input[type="image"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+input[size] {
+  min-width: auto;
   width: auto;
 }
 
@@ -198,6 +200,7 @@ select:not([multiple]) {
   background-size: 1em 1em;
   background-repeat: no-repeat;
   background-position: right 0.5em center;
+  background-color: Field;
   padding-right: 2em;
 
   &:hover, &:active {
