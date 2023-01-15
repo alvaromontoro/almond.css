@@ -289,7 +289,7 @@ input[type="reset"] {
     background-color: var(--primary-lighter); }
   input[type="reset"]:disabled, input[type="reset"][disabled] {
     background: var(--secondary-lighter);
-    border: 1px solid transparent;
+    border: 1px solid var(--secondary-lighter);
     color: var(--secondary-light); }
 
 button[disabled],
