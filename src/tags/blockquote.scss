@@ -22,9 +22,13 @@ blockquote {
     z-index: -1;
   }
 
+  &::after {
+    content: no-close-quote;
+  }
+
   & > :first-child {
     margin-top: 0;
-    text-indent: 1rem;
+    text-indent: 1.75rem;
   }
 
   & > :last-child {

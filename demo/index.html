@@ -42,7 +42,7 @@
             <strike>strike</strike>), and the <code>&lt;u&gt;</code> tag now stands for
             <u>unarticullated-text</u> instead of underline; abbreviations are great, as you may have
             <abbr title="too many abbreviations">TMA</abbr>; <code>inline code</code> is cool too;
-            You can also add line breask with br...<br />
+            You can also add line breaks with br...<br />
             <mark>Highlight text with mark</mark> or display a <kbd>Key</kbd>. You can also have
             <q>inline quotes with q</q>, or <samp>results from an operation with samp</samp> or a
             <var>variable</var>, or an <output>output</output>, also there's <small>small text</small>, text
@@ -210,6 +210,17 @@
             <p>
               <label for="input-text-readonly">Read Only</label><br />
               <input type="text" id="input-text-readonly" readonly />
+            </p>
+          </form>
+          <h4>Inputs with special attributes</h4>
+          <form>
+            <p>
+              <label for="input-with-size-5" style="width:150px;display:inline-block;">Input with size=5</label>
+              <input id="input-with-size-5" type="text" size="5">
+            </p>
+            <p>
+              <label for="input-with-size-20" style="width:150px;display:inline-block;">Input with size=20</label>
+              <input id="input-with-size-20" type="text" size="20">
             </p>
           </form>
         </section>
@@ -507,7 +518,7 @@ pre
           <h4>Pre with Code</h4>
           <pre><code>#include &lt;stdio.h&gt;
 
-// this is a line with really long text to show that now the gray background goes all the way, instead of limiting to the wisth of the main.
+// this is a line with really long text to show that now the gray background goes all the way, instead of limiting to the width of the main.
 int main(void) {
   printf("Hello World");
   return 0;
