@@ -711,6 +711,10 @@ a[download] {
   background-size: 1rem 1rem;
   background-position: 0rem 50%;
   display: inline-block;
+  -moz-print-color-adjust: exact;
+  -ms-print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
   padding-left: 1.25rem; }
 
 a[href^="mailto:"] {
