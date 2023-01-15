@@ -249,7 +249,7 @@ input[type="submit"] {
   -webkit-appearance: button;
   appearance: button;
   background-color: var(--primary);
-  border: 1px solid transparent;
+  border: 1px solid var(--primary);
   border-radius: var(--border-radius);
   box-sizing: border-box;
   color: var(--primary-bg);
@@ -272,6 +272,7 @@ input[type="submit"] {
   input[type="submit"][disabled],
   input[type="submit"]:disabled {
     background: var(--secondary-lighter);
+    border: 1px solid var(--secondary-lighter);
     color: var(--secondary-light); }
   button:not(:disabled):not([disabled]):hover,
   input[type="button"]:not(:disabled):not([disabled]):hover,

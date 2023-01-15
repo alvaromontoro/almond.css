@@ -97,7 +97,7 @@ input[type="submit"] {
   -webkit-appearance: button;
   appearance: button;
   background-color: var(--primary);
-  border: 1px solid transparent;
+  border: 1px solid var(--primary);
   border-radius: var(--border-radius);
   box-sizing: border-box;
   color: var(--primary-bg);
@@ -116,6 +116,7 @@ input[type="submit"] {
   &[disabled],
   &:disabled {
     background: var(--secondary-lighter);
+    border: 1px solid var(--secondary-lighter);
     color: var(--secondary-light);
   }
 
