@@ -173,6 +173,10 @@ input[type="checkbox"] {
 
   &:checked {
     background: var(--primary);
+    -moz-print-color-adjust: exact;
+    -ms-print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   &:disabled {
