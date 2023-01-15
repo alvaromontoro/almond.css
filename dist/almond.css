@@ -778,6 +778,22 @@ input[type="url"] {
 input[type="number"] {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M26,4 21,36 M15,4 10,36 M4,15 36,15 M2,26 34,26' fill='none' stroke='%23ccc' stroke-width='2' /></svg>"); }
 
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="time"],
+input[type="search"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="number"] {
+  -moz-print-color-adjust: exact;
+  -ms-print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact; }
+
 [role="progressbar"] {
   --value: 50;
   --thick: 50%;
