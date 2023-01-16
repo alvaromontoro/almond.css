@@ -13,6 +13,22 @@ The main goals of this project are:
 - **Lightweight**: limit the size to 3KB (gzipped).
 - **Keep it simple** but elegant.
 
+## CDN
+
+We are working on CDN/NPM publication options. In the meantime, an alternative for those interested, is to use [jsDelivr](https://www.jsdelivr.com/), which works for both github and npm.
+
+Example stylesheet reference (**You only need one, not both**):
+
+```html
+<!-- loads all the styles, including icons and images -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alvaromontoro/almond.css@latest/dist/almond.min.css" />
+
+<!-- loads a lighter version of the library: no icons or images -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alvaromontoro/almond.css@latest/dist/almond.lite.min.css" />
+```
+
+More CDN, NPM options coming up soon.
+
 ## Building and running locally
 
 Here are the instructions on how to copy the code of this library into your local machine and build it. They use `npm`, but you can run similar commands with `yarn`.

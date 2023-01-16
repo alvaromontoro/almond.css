@@ -17,7 +17,8 @@ select {
   max-width: 100%;
   min-width: 15rem;
   text-transform: none;
-  vertical-align: bottom;
+  vertical-align: middle;
+  width: 15rem;
 
   &:invalid {
     border-color: var(--error);
@@ -39,6 +40,15 @@ select {
   }
 }
 
+input[type="button"],
+input[type="image"],
+input[type="reset"],
+input[type="submit"],
+input[size] {
+  min-width: auto;
+  width: auto;
+}
+
 input:not([type="file"]):not([type="image"]),
 textarea,
 select {
@@ -58,6 +68,7 @@ input[type="range"] {
 textarea {
   height: 5rem;
   line-height: 1.5rem;
+  min-height: 3rem;
   overflow: auto;
 }
 
@@ -97,7 +108,7 @@ input[type="submit"] {
   -webkit-appearance: button;
   appearance: button;
   background-color: var(--primary);
-  border: 1px solid transparent;
+  border: 1px solid var(--primary);
   border-radius: var(--border-radius);
   box-sizing: border-box;
   color: var(--primary-bg);
@@ -116,6 +127,7 @@ input[type="submit"] {
   &[disabled],
   &:disabled {
     background: var(--secondary-lighter);
+    border: 1px solid var(--secondary-lighter);
     color: var(--secondary-light);
   }
 
@@ -137,7 +149,7 @@ input[type="reset"] {
   &:disabled,
   &[disabled] {
     background: var(--secondary-lighter);
-    border: 1px solid transparent;
+    border: 1px solid var(--secondary-lighter);
     color: var(--secondary-light);
   }
 }
@@ -173,6 +185,10 @@ input[type="checkbox"] {
 
   &:checked {
     background: var(--primary);
+    -moz-print-color-adjust: exact;
+    -ms-print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   &:disabled {
@@ -189,6 +205,7 @@ select:not([multiple]) {
   background-size: 1em 1em;
   background-repeat: no-repeat;
   background-position: right 0.5em center;
+  background-color: Field;
   padding-right: 2em;
 
   &:hover, &:active {
