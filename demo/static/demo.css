@@ -1,3 +1,89 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Light.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-LightItalic.ttf);
+  font-style: italic;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-BoldItalic.ttf);
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Black.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-BlackItalic.ttf);
+  font-style: italic;
+  font-weight: 900;
+}
+
+:root {
+  --font-family: Roboto, Ubuntu, 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  --font-size-root: 20px;
+  --font-weight-thin: 200;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-bolder: 900;
+}
+
+a, a:link, a:visited {
+  font-weight: var(--font-weight-normal);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: var(--font-weight-bold);
+}
+
+header p {
+  margin-top: 0;
+  font-size: 1em;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto auto;
+}
+
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -7,10 +93,163 @@
   margin-right: 1rem;
 }
 
-.section {
-  margin-bottom: 2rem;
+.a11y-hidden {
+  position: absolute;
+  display: block;
+  left: -1000in;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
-.section .section {
-  margin-bottom: 1rem;
+.a11y-focus:focus {
+  left: auto;
+  width: auto;
+  height: auto;
+  overflow: auto;
 }
+
+.main-menu {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.main-menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-menu ul li > div {
+  font-weight: var(--font-weight-bold);
+  margin-top: 1rem;
+}
+
+.main-menu button {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 50%;
+  background:
+    linear-gradient(45deg, #0000 45%, #fff 0 55%, #0000 0) 50% 50% / 50% 50% no-repeat,
+    linear-gradient(-45deg, #0000 45%, #fff 0 55%, #0000 0) 50% 50% / 50% 50% no-repeat;
+  background-color: var(--primary);
+}
+
+.main-menu button span {
+  position: absolute;
+  left: -999in;
+}
+
+.main-menu.closed {
+  position: fixed;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+}
+
+.main-menu.closed button {
+  background: linear-gradient(#fff 15%, #0000 0 42.5%, #fff 0 57.5%, #0000 0 85%, #fff 0) 50% 50% / 50% 50% no-repeat;
+  background-color: var(--primary);
+}
+
+.main-menu.closed ul,
+.main-menu.closed h2 {
+  display: none;
+}
+
+details summary {
+  background: 
+  radial-gradient(at 50% 100%, #ff03, #ff00),
+  linear-gradient(135deg, #80d6f755, #c597c555);
+  background: #f4f6f8;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+code {
+  font-weight: var(--font-weight-normal);
+}
+
+table code {
+  white-space: nowrap;
+}
+
+.demo {
+  margin: 2rem 0 5rem 0;
+}
+
+.demo > summary {
+  position: relative;
+}
+
+.demo > summary::after {
+  content: "";
+  position: absolute;
+  right: 0.5rem;
+  top: 5%;
+  height: 90%;
+  aspect-ratio: 1;
+  background: url(./chipmunk-face.svg);
+  background-size: cover;
+}
+
+#source-code {
+  height: 30rem;
+  width: 30rem;
+  max-width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  :root {
+    --font-size-root: 16px;
+  }
+
+  .main-menu,
+  .main-menu.closed {
+    overflow: auto;
+    width: 250px;
+    min-width: 250px;
+    height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-right: 1px solid #eee;
+    background:
+      radial-gradient(at 100% 50%, #ff03, #ff00),
+      linear-gradient(45deg, #80d6f755, #c597c555)
+      ;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .main-menu h2 {
+    font-size: 1.35rem;
+    margin-top: 0;
+  }
+
+  .main-menu button {
+    display: none;
+  }
+
+  .main-menu.closed h2,
+  .main-menu.closed ul {
+    display: block;
+  }
+
+  header {
+    height: auto;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  body > div {
+    margin-left: 250px;
+  }
+}
+
