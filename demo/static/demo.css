@@ -205,7 +205,7 @@ table code {
 
 @media (min-width: 768px) {
   :root {
-    --font-size-root: 16px;
+    --font-size-root: 100%;
   }
 
   .main-menu,

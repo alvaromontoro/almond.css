@@ -28,6 +28,11 @@ for (let x = 0; x < menuLinks.length; x++) {
         document.querySelector("#documentation-content").innerHTML = data;
         window.scrollTo(0, 0);
         document.querySelector(".main-menu").classList.toggle("closed", true);
+
+        // reset the textarea value when on customization
+        if (fileName.indexOf('customization') > -1) {
+          document.querySelector("#source-code").value = document.querySelector("#custom-styles").innerHTML;
+        }
       });
   });
 }
