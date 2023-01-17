@@ -20,7 +20,7 @@ for (let x = 0; x < menuLinks.length; x++) {
   menuLinks[x].addEventListener("click", function(e) {
     e.preventDefault();
     document.querySelector("#documentation-content").innerHTML = "<h2>Loading...</h2>";
-    const fileName = `/demo/pages/${this.getAttribute("href").replace("#","").replace("./pages/", "").replace(".html", "")}.html`;
+    const fileName = `./pages/${this.getAttribute("href").replace("#","").replace("./pages/", "").replace(".html", "")}.html`;
     fetch(fileName)
       .then((response) => response.text())
       .then((data) => {
