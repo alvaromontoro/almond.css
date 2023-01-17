@@ -6,9 +6,10 @@ function updateStyles() {
   const props = document.querySelectorAll(".input");
   let newStyles = "";
   for (let x = 0; x < props.length; x++) {
-    newStyles += `--${props[x].name}: ${props[x].value}${props[x].dataset.unit||''};\n`;
+    newStyles += `  --${props[x].name}: ${props[x].value}${props[x].dataset.unit||''};\n`;
   }
-  document.querySelector("#custom-styles").innerHTML = `:root {\n ${newStyles} }`;
+  document.querySelector("#custom-styles").innerHTML = `:root {\n${newStyles}}`;
+  document.querySelector("#source-code").value = `:root {\n${newStyles}}`;
 }
 
 /**

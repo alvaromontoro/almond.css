@@ -196,6 +196,13 @@ table code {
   background-size: cover;
 }
 
+#source-code {
+  height: 30rem;
+  width: 30rem;
+  max-width: 100%;
+}
+
+
 @media (min-width: 768px) {
   :root {
     --font-size-root: 16px;
