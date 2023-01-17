@@ -24,94 +24,94 @@
     <tbody>
       <tr>
         <th scope="row"><code>--primaryH</code></th>
-        <td>
+        <td id="primaryH">
           Primary color hue value. This value should be between 0 and 360. <strong>Primary is the color of the main elements (e.g. buttons, titles, etc.)</strong>
         </td>
         <td>210</td>
         <td>
-          <input class="input" name="primaryH" type="range" min="0" max="360" value="210" oninput="updateStyles()" />
+          <input class="input" name="primaryH" type="range" min="0" max="360" value="210" oninput="updateStyles()" aria-labelledby="primaryH" />
         </td>
       </tr>
       <tr>
         <th scope="row"><code>--primaryS</code></th>
-        <td>Primary color saturation value (how vibrant the color wil be). This value should be a percentage 0-100.</td>
+        <td id="primaryS">Primary color saturation value (how vibrant the color wil be). This value should be a percentage 0-100.</td>
         <td>50%</td>
         <td>
-          <input class="input" name="primaryS" type="range" min="0" max="100" value="50" data-unit="%" oninput="updateStyles()" />
+          <input class="input" name="primaryS" type="range" min="0" max="100" value="50" data-unit="%" oninput="updateStyles()" aria-labelledby="primaryS" />
         </td>
       </tr>
       <tr>
         <th scope="row"><code>--primaryL</code></th>
-        <td>Primary color lightness value (how light/dark it will be). This value should be a percentage 0-100.</td>
+        <td id="primaryL">Primary color lightness value (how light/dark it will be). This value should be a percentage 0-100.</td>
         <td>40%</td>
         <td>
-          <input class="input" name="primaryL" type="range" min="0" max="100" value="40" data-unit="%" oninput="updateStyles()" />
+          <input class="input" name="primaryL" type="range" min="0" max="100" value="40" data-unit="%" oninput="updateStyles()" aria-labelledby="primaryL" />
         </td>
       </tr>
       <tr>
         <th scope="row"><code>--primary-bg</code></th>
-        <td>Primary color background (used as background in certain elements like secondary buttons). This value should be a color.</td>
+        <td id="primary-bg">Primary color background (used as background in certain elements like secondary buttons). This value should be a color.</td>
         <td>white</td>
         <td>
-          <input class="input" name="primary-bg" type="color" oninput="updateStyles()" value="#ffffff" />
+          <input class="input" name="primary-bg" type="color" oninput="updateStyles()" value="#ffffff" aria-labelledby="primary-bg" />
         </td>
       </tr>
       <tr>
         <th scope="row"><code>--secondaryH</code></th>
-        <td>
+        <td id="secondaryH">
           Secondary color hue value. This value should be between 0 and 360. <strong>Secondary is the color of the text and other elements.</strong>
         </td>
         <td>0</td>
         <td>
-          <input class="input" name="secondaryH" type="range" min="0" max="360" value="0" oninput="updateStyles()" />
+          <input class="input" name="secondaryH" type="range" min="0" max="360" value="0" oninput="updateStyles()" aria-labelledby="secondaryH" />
         </td>
       </tr>
       <tr>
         <th scope="row"><code>--secondaryS</code></th>
-        <td>Secondary color saturation value (how vibrant the color wil be). This value should be a percentage 0-100.</td>
+        <td id="secondaryS">Secondary color saturation value (how vibrant the color wil be). This value should be a percentage 0-100.</td>
         <td>0%</td>
         <td>
-          <input class="input" name="secondaryS" type="range" min="0" max="100" value="0" data-unit="%" oninput="updateStyles()" />
+          <input class="input" name="secondaryS" type="range" min="0" max="100" value="0" data-unit="%" oninput="updateStyles()" aria-labelledby="secondaryS" />
         </td>
       </tr>
       <tr>
         <th scope="row"><code>--secondaryL</code></th>
-        <td>Secondary color lightness value (how light/dark it will be). This value should be a percentage 0-100.</td>
+        <td id="secondaryL">Secondary color lightness value (how light/dark it will be). This value should be a percentage 0-100.</td>
         <td>13%</td>
         <td>
-          <input class="input" name="secondaryL" type="range" min="0" max="100" value="13" data-unit="%" oninput="updateStyles()" />
+          <input class="input" name="secondaryL" type="range" min="0" max="100" value="13" data-unit="%" oninput="updateStyles()" aria-labelledby="secondaryL" />
         </td>
       </tr>
       <tr>
         <th scope="row"><code>--secondary-bg</code></th>
-        <td>Secondary color background (used as background in certain elements). This value should be a color.</td>
+        <td id="secondary-bg">Secondary color background (used as background in certain elements). This value should be a color.</td>
         <td>white</td>
         <td>
-          <input class="input" name="secondary-bg" type="color" oninput="updateStyles()" value="#ffffff" />
+          <input class="input" name="secondary-bg" type="color" oninput="updateStyles()" value="#ffffff" aria-labelledby="secondary-bg" />
         </td>
       </tr>
       <tr>
         <th scope="row"><code>--font-family</code></th>
-        <td>Font family to be used. The value should be a list of font names.</td>
+        <td id="font-family">Font family to be used. The value should be a list of font names.</td>
         <td>Helvetica, Arial, sans-serif</td>
         <td>
-          <input class="input" name="font-family" type="text" oninput="updateStyles()" value="Roboto, Helvetica, Arial, sans-serif" />
+          <input class="input" name="font-family" type="text" oninput="updateStyles()" value="Roboto, Helvetica, Arial, sans-serif" aria-labelledby="font-family" />
         </td>
       </tr>
       <tr>
         <th scope="row"><code>--font-size-root</code></th>
-        <td>The size of the font at the root level.</td>
+        <td id="font-size-root">The size of the font at the root level.</td>
         <td>16px</td>
         <td>
-          <input class="input" name="font-size-root" type="text" oninput="updateStyles()" value="16px" />
+          <input class="input" name="font-size-root" type="text" oninput="updateStyles()" value="16px" aria-labelledby="font-size-root" />
         </td>
       </tr>
       <tr>
         <th scope="row"><code>--font-weight-thin</code></th>
-        <td>The font weight for thin text (and for some elements). This should be a value 100-900.</td>
+        <td id="font-weight-thin">The font weight for thin text (and for some elements). This should be a value 100-900.</td>
         <td>100</td>
         <td>
-          <select class="input" name="font-weight-thin" oninput="updateStyles()" value="100">
+          <select class="input" name="font-weight-thin" oninput="updateStyles()" value="100" aria-labelledby="font-weight-thin">
             <option value="100" selected>100</option>
             <option value="200">200</option>
             <option value="300">300</option>
@@ -126,10 +126,10 @@
       </tr>
       <tr>
         <th scope="row"><code>--font-weight-normal</code></th>
-        <td>The font weight for regular text (and other elements). This should be a value 100-900.</td>
+        <td id="font-weight-normal">The font weight for regular text (and other elements). This should be a value 100-900.</td>
         <td>200</td>
         <td>
-          <select class="input" name="font-weight-normal" oninput="updateStyles()" value="200">
+          <select class="input" name="font-weight-normal" oninput="updateStyles()" value="200" aria-labelledby="font-weight-normal">
             <option value="100">100</option>
             <option value="200" selected>200</option>
             <option value="300">300</option>
@@ -144,10 +144,10 @@
       </tr>
       <tr>
         <th scope="row"><code>--font-weight-bold</code></th>
-        <td>The font weight for bold text (and for some elements). This should be a value 100-900.</td>
+        <td id="font-weight-bold">The font weight for bold text (and for some elements). This should be a value 100-900.</td>
         <td>400</td>
         <td>
-          <select class="input" name="font-weight-bold" oninput="updateStyles()" value="400">
+          <select class="input" name="font-weight-bold" oninput="updateStyles()" value="400" aria-labelledby="font-weight-bold">
             <option value="100">100</option>
             <option value="200">200</option>
             <option value="300">300</option>
@@ -162,10 +162,10 @@
       </tr>
       <tr>
         <th scope="row"><code>--font-weight-bolder</code></th>
-        <td>The font weight for bolder text (and for some elements). This should be a value 100-900.</td>
+        <td id="font-weight-bolder">The font weight for bolder text (and for some elements). This should be a value 100-900.</td>
         <td>700</td>
         <td>
-          <select class="input" name="font-weight-bolder" oninput="updateStyles()" value="700">
+          <select class="input" name="font-weight-bolder" oninput="updateStyles()" value="700" aria-labelledby="font-weight-bolder">
             <option value="100">100</option>
             <option value="200">200</option>
             <option value="300">300</option>
@@ -180,26 +180,26 @@
       </tr>
       <tr>
         <th scope="row"><code>--line-height</code></th>
-        <td>The size for the line-height. This is an important value for accessibility.</td>
+        <td id="line-height">The size for the line-height. This is an important value for accessibility.</td>
         <td>1.75rem</td>
         <td>
-          <input class="input" name="line-height" type="text" oninput="updateStyles()" value="1.75rem" />
+          <input class="input" name="line-height" type="text" oninput="updateStyles()" value="1.75rem"  aria-labelledby="line-height"/>
         </td>
       </tr>
       <tr>
         <th scope="row"><code>--heading-margin</code></th>
-        <td>The margins applied to the headings (h1-6). This value should be a set of margins.</td>
+        <td id="heading-margin">The margins applied to the headings (h1-6). This value should be a set of margins.</td>
         <td>1.5rem 0 1rem</td>
         <td>
-          <input class="input" name="heading-margin" type="text" oninput="updateStyles()" value="1.5rem 0 1rem" />
+          <input class="input" name="heading-margin" type="text" oninput="updateStyles()" value="1.5rem 0 1rem" aria-labelledby="heading-margin" />
         </td>
       </tr>
       <tr>
         <th scope="row"><code>--border-radius</code></th>
-        <td>The amount of radius (roundness) applied to the border of some elements (e.g. buttons)</td>
+        <td id="border-radius">The amount of radius (roundness) applied to the border of some elements (e.g. buttons)</td>
         <td>2px</td>
         <td>
-          <input class="input" name="border-radius" type="text" oninput="updateStyles()" value="2px" />
+          <input class="input" name="border-radius" type="text" oninput="updateStyles()" value="2px" aria-labelledby="border-radius" />
         </td>
       </tr>
     </tbody>
@@ -210,7 +210,7 @@
   <h2>Source code</h2>
   <p>Copy the following code at the top of your CSS, or in a style on the site's <code>&lt;head&gt;</code>:</p>
   <div>
-    <textarea id="source-code">:root {
+    <textarea id="source-code" aria-label="CSS source code to copy to your files">:root {
   --primaryH: 210;
   --primaryS: 50%;
   --primaryL: 40%;
@@ -219,7 +219,7 @@
   --secondaryS: 0%;
   --secondaryL: 13%;
   --secondary-bg: #ffffff;
-  --font-family: Helvetica, Arial, sans-serif;
+  --font-family: Roboto, Helvetica, Arial, sans-serif;
   --font-size-root: 16px;
   --font-weight-thin: 100;
   --font-weight-normal: 200;
