@@ -62,7 +62,6 @@ a, a:link, a:visited {
 }
 
 header {
-  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,7 +112,6 @@ main {
 .main-menu {
   width: 100%;
   position: relative;
-  background: white;
   z-index: 1;
 }
 
@@ -177,6 +175,10 @@ code {
 
 table code {
   white-space: nowrap;
+}
+
+.demo {
+  margin: 2rem 0 5rem 0;
 }
 
 .demo > summary {

@@ -24,7 +24,7 @@
         --secondaryL: 13%;
         --secondary-bg: #fff;
         --font-family: Helvetica, Arial, sans-serif;
-        --font-size-root: 16px;
+        --font-size-root: 100%;
         --font-weight-bolder: 700;
         --font-weight-bold: 400;
         --font-weight-normal: 200;
@@ -41,6 +41,7 @@
     <style>
       * { accent-color: var(--primary); }
     </style>
+    <script src="./js/code.js" defer></script>
   </head>
   <body id="all">
     <a href="#main" class="a11y-hidden a11y-focus">Skip to content</a>
@@ -51,46 +52,52 @@
       <h2>Table of contents</h2>
       <ul>
         <li>
+          <a href="./pages/index.html">Welcome</a>
+        </li>
+        <li>
           <div>Customization</div>
-          <li><a href="#customization">Variables</a></li>
+          <li><a href="./pages/customization.html">Variables</a></li>
         </li>
         <li>
           <div>Typography</div>
           <ul>
-            <li><a href="#inline-elements">Inline elements</a></li>
-            <li><a href="#fancy-links">Fancy links</a></li>
-            <li><a href="#headings">Headings</a></li>
-            <li><a href="#lists">Lists</a></li>
+            <li><a href="./pages/inline-elements.html">Inline elements</a></li>
+            <li><a href="./pages/address.html">Address</a></li>
+            <li><a href="./pages/blockquote.html">Blockquote</a></li>
+            <li><a href="./pages/fancy-links.html">Fancy links</a></li>
+            <li><a href="./pages/headings.html">Headings</a></li>
+            <li><a href="./pages/lists.html">Lists</a></li>
+            <li><a href="./pages/preformatted-text.html">Preformatted text</a></li>
           </ul>
         </li>
         <li>
           <div>Form &amp; Controls</div>
           <ul>
-            <li><a href="#inputs">Inputs &amp; Textareas</a></li>
-            <li><a href="#radio-buttons">Radio buttons</a></li>
-            <li><a href="#checkboxes">Checkboxes</a></li>
-            <li><a href="#selects">Selects</a></li>
-            <li><a href="#ranges">Ranges</a></li>
-            <li><a href="#buttons">Buttons</a></li>
-            <li><a href="#other-inputs">Other inputs</a></li>
+            <li><a href="./pages/buttons.html">Buttons</a></li>
+            <li><a href="./pages/fieldsets.html">Fieldsets</a></li>
+            <li><a href="./pages/inputs.html">Inputs</a></li>
+            <li><a href="./pages/radio-buttons.html">Radio &amp; Checkboxes</a></li>
+            <li><a href="./pages/selects.html">Selects</a></li>
+            <li><a href="./pages/textareas.html">Textareas</a></li>
           </ul>
         </li>
         <li>
           <div>Other Elements</div>
           <ul>
-            <li><a href="#block-elements">Block elements</a></li>
-            <li><a href="#main">Tables</a></li>
-            <li><a href="#main">Horizontal rule</a></li>
-            <li><a href="#main">Images</a></li>
-            <li><a href="#main">Dialogs</a></li>
-            <li><a href="#main">Preformatted text</a></li>
+            <!-- <li><a href="#block-elements">Containers</a></li> -->
+            <li><a href="./pages/details.html">Details/Summary</a></li>
+            <li><a href="./pages/dialogs.html">Dialogs</a></li>
+            <li><a href="./pages/horizontal-rule.html">Horizontal rule</a></li>
+            <li><a href="./pages/images.html">Images</a></li>
+            <li><a href="./pages/progres.html">Progress</a></li>
+            <li><a href="./pages/tables.html">Tables</a></li>
           </ul>
         </li>
         <li>
           <div>Widgets</div>
           <ul>
-            <li><a href="#main">Progress bar</a></li>
-            <li><a href="#main">Switch</a></li>
+            <li><a href="./pages/widget-progress-bar.html">Progress bar</a></li>
+            <li><a href="./pages/widget-switch.html">Switch</a></li>
           </ul>
         </li>
       </ul>
@@ -103,549 +110,35 @@
         </div>
       </header>
       <main id="main">
-        <p>Almond.CSS is a collection of CSS styles to make simple websites look nicer and better.</p>
-        <p>
-          On this demo page, we will go through the main components from this lightweight CSS library.
-          Then we will also add the extended classed styles.
-        </p>
-
-        <article id="customization">
-          <h2>Customization</h2>
+        <article id="documentation-content">
+          <h2>Introduction</h2>
           <p>
-            Almond.CSS can be customized by indicating some values for color, lightness, font sizes and 
-            weights, etc.
+            Almond.CSS is a collection of CSS styles to make simple websites look nicer and better. 
+            On this demo page, we will go through the main components from this lightweight CSS library.
+            Then we will also add the extended styles.
           </p>
           <p>
-            Update the table below to see live how each of the properties affect the site, and make it your
-            own (for example, change the hue value). Then, you can copy the resulting code and place it on 
-            top of your CSS or HTML file and it will apply automatically to your site!
+            <strong>Important</strong>:
+            If you want a static page with all the styles in one place and that doesn't require JavaScript
+            to work, <a href="./old/">visit the old demo page</a>.
           </p>
           <p>
-            <strong>Important:</strong> this demo requires JavaScript enabled.
+            Almond.CSS has two versions:
           </p>
-          <section>
-            <script>
-              function updateStyles() {
-                const props = document.querySelectorAll(".input");
-                let newStyles = "";
-                for (let x = 0; x < props.length; x++) {
-                  newStyles += `--${props[x].name}: ${props[x].value}${props[x].dataset.unit||''};\n`;
-                }
-                document.querySelector("#custom-styles").innerHTML = `:root {\n ${newStyles} }`;
-              }
-            </script>
-            <table id="settings">
-              <thead>
-                <tr>
-                  <th scope="col">Property</th>
-                  <th scope="col">Description</th>
-                  <th scope="col">Default value</th>
-                  <th scope="col">Current value</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row"><code>--primaryH</code></th>
-                  <td>
-                    Primary color hue value. This value should be between 0 and 360. <strong>Primary is the color of the main elements (e.g. buttons, titles, etc.)</strong>
-                  </td>
-                  <td>210</td>
-                  <td>
-                    <input class="input" name="primaryH" type="range" min="0" max="360" value="210" oninput="updateStyles()" />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--primaryS</code></th>
-                  <td>Primary color saturation value (how vibrant the color wil be). This value should be a percentage 0-100.</td>
-                  <td>50%</td>
-                  <td>
-                    <input class="input" name="primaryS" type="range" min="0" max="100" value="50" data-unit="%" oninput="updateStyles()" />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--primaryL</code></th>
-                  <td>Primary color lightness value (how light/dark it will be). This value should be a percentage 0-100.</td>
-                  <td>40%</td>
-                  <td>
-                    <input class="input" name="primaryL" type="range" min="0" max="100" value="40" data-unit="%" oninput="updateStyles()" />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--primary-bg</code></th>
-                  <td>Primary color background (used as background in certain elements like secondary buttons). This value should be a color.</td>
-                  <td>white</td>
-                  <td>
-                    <input class="input" name="primary-bg" type="color" oninput="updateStyles()" value="#ffffff" />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--secondaryH</code></th>
-                  <td>
-                    Secondary color hue value. This value should be between 0 and 360. <strong>Secondary is the color of the text and other elements.</strong>
-                  </td>
-                  <td>0</td>
-                  <td>
-                    <input class="input" name="secondaryH" type="range" min="0" max="360" value="0" oninput="updateStyles()" />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--secondaryS</code></th>
-                  <td>Secondary color saturation value (how vibrant the color wil be). This value should be a percentage 0-100.</td>
-                  <td>0%</td>
-                  <td>
-                    <input class="input" name="secondaryS" type="range" min="0" max="100" value="0" data-unit="%" oninput="updateStyles()" />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--secondaryL</code></th>
-                  <td>Secondary color lightness value (how light/dark it will be). This value should be a percentage 0-100.</td>
-                  <td>13%</td>
-                  <td>
-                    <input class="input" name="secondaryL" type="range" min="0" max="100" value="13" data-unit="%" oninput="updateStyles()" />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--secondary-bg</code></th>
-                  <td>Secondary color background (used as background in certain elements). This value should be a color.</td>
-                  <td>white</td>
-                  <td>
-                    <input class="input" name="secondary-bg" type="color" oninput="updateStyles()" value="#ffffff" />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--font-family</code></th>
-                  <td>Font family to be used. The value should be a list of font names.</td>
-                  <td>Helvetica, Arial, sans-serif</td>
-                  <td>
-                    <input class="input" name="font-family" type="text" oninput="updateStyles()" value="Helvetica, Arial, sans-serif" />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--font-size-root</code></th>
-                  <td>The size of the font at the root level.</td>
-                  <td>16px</td>
-                  <td>
-                    <input class="input" name="font-size-root" type="text" oninput="updateStyles()" value="16px" />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--font-weight-thin</code></th>
-                  <td>The font weight for thin text (and for some elements). This should be a value 100-900.</td>
-                  <td>100</td>
-                  <td>
-                    <select class="input" name="font-weight-thin" oninput="updateStyles()" value="100">
-                      <option value="100" selected>100</option>
-                      <option value="200">200</option>
-                      <option value="300">300</option>
-                      <option value="400">400</option>
-                      <option value="500">500</option>
-                      <option value="600">600</option>
-                      <option value="700">700</option>
-                      <option value="800">800</option>
-                      <option value="900">900</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--font-weight-normal</code></th>
-                  <td>The font weight for regular text (and other elements). This should be a value 100-900.</td>
-                  <td>200</td>
-                  <td>
-                    <select class="input" name="font-weight-normal" oninput="updateStyles()" value="200">
-                      <option value="100">100</option>
-                      <option value="200" selected>200</option>
-                      <option value="300">300</option>
-                      <option value="400">400</option>
-                      <option value="500">500</option>
-                      <option value="600">600</option>
-                      <option value="700">700</option>
-                      <option value="800">800</option>
-                      <option value="900">900</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--font-weight-bold</code></th>
-                  <td>The font weight for bold text (and for some elements). This should be a value 100-900.</td>
-                  <td>400</td>
-                  <td>
-                    <select class="input" name="font-weight-bold" oninput="updateStyles()" value="400">
-                      <option value="100">100</option>
-                      <option value="200">200</option>
-                      <option value="300">300</option>
-                      <option value="400" selected>400</option>
-                      <option value="500">500</option>
-                      <option value="600">600</option>
-                      <option value="700">700</option>
-                      <option value="800">800</option>
-                      <option value="900">900</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--font-weight-bolder</code></th>
-                  <td>The font weight for bolder text (and for some elements). This should be a value 100-900.</td>
-                  <td>700</td>
-                  <td>
-                    <select class="input" name="font-weight-bolder" oninput="updateStyles()" value="700">
-                      <option value="100">100</option>
-                      <option value="200">200</option>
-                      <option value="300">300</option>
-                      <option value="400">400</option>
-                      <option value="500">500</option>
-                      <option value="600">600</option>
-                      <option value="700" selected>700</option>
-                      <option value="800">800</option>
-                      <option value="900">900</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--line-height</code></th>
-                  <td>The size for the line-height. This is an important value for accessibility.</td>
-                  <td>1.75rem</td>
-                  <td>
-                    <input class="input" name="line-height" type="text" oninput="updateStyles()" value="1.75rem" />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--heading-margin</code></th>
-                  <td>The margins applied to the headings (h1-6). This value should be a set of margins.</td>
-                  <td>1.5rem 0 1rem</td>
-                  <td>
-                    <input class="input" name="heading-margin" type="text" oninput="updateStyles()" value="1.5rem 0 1rem" />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><code>--border-radius</code></th>
-                  <td>The amount of radius (roundness) applied to the border of some elements (e.g. buttons)</td>
-                  <td>2px</td>
-                  <td>
-                    <input class="input" name="border-radius" type="text" oninput="updateStyles()" value="2px" />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section class="demo-grid">
-            <div>
-              <img src="./static/chipmunk.svg" alt="Cartoon of Al, the Chipmunk" />
-            </div>
-          </section>
-        </article>
-
-        <article>
-          <section id="inline-elements">
-            <h2>Inline Elements</h2>
-            <p>
-              This is a paragraph with multiple inline elements. The <span>span</span> is not styled,
-              but you may have <a href="#">some links with the a tag</a>; also you can
-              <em>add emphasis with em</em> or <i>also with i</i>; Highlight the words by
-              <strong>using strong</strong> or just <b>bring attention with the b tag</b>; of course, 
-              you can <s>strikethrough text</s> (or use the deprecated tag in HTML5:
-              <strike>strike</strike>), and the <code>&lt;u&gt;</code> tag now stands for
-              <u>unarticullated-text</u> instead of underline; abbreviations are great, as you may have
-              <abbr title="too many abbreviations">TMA</abbr>; <code>inline code</code> is cool too;
-              You can also add line breask with br...<br />
-              <mark>Highlight text with mark</mark> or display a <kbd>Key</kbd>. You can also have
-              <q>inline quotes with q</q>, or <samp>results from an operation with samp</samp> or a
-              <var>variable</var>, or an <output>output</output>, also there's <small>small text</small>, text
-              with<sup>superscript</sup>, or text with<sub>subscript</sub>... not to mention you can
-              have time too. For example, this paragraph was originally written in <time>2020</time>.
-              Not to forget about <dfn>definitions</dfn>! Also <del>del was deleted</del> and 
-              <ins>ins was inserted</ins>.
-            </p>
-
-            <details class="demo">
-              <summary>View code</summary>
-              <pre><code>This is a paragraph with multiple inline elements. The &lt;span&gt;span&lt;/span&gt; is not styled,
-but you may have &lt;a href="#"&gt;some links with the a tag&lt;/a&gt;; also you can
-&lt;em&gt;add emphasis with em&lt;/em&gt; or &lt;i&gt;also with i&lt;/i&gt;; Highlight the words by
-&lt;strong&gt;using strong&lt;/strong&gt; or just &lt;b&gt;bring attention with the b tag&lt;/b&gt;; of course, 
-you can &lt;s&gt;strikethrough text&lt;/s&gt; (or use the deprecated tag in HTML5:
-&lt;strike&gt;strike&lt;/strike&gt;), and the &lt;code&gt;&lt;u&gt;&lt;/code&gt; tag now stands for
-&lt;u&gt;unarticullated-text&lt;/u&gt; instead of underline; abbreviations are great, as you may have
-&lt;abbr title="too many abbreviations"&gt;TMA&lt;/abbr&gt;; &lt;code&gt;inline code&lt;/code&gt; is cool too;
-You can also add line breask with br...&lt;br /&gt;
-&lt;mark&gt;Highlight text with mark&lt;/mark&gt; or display a &lt;kbd&gt;Key&lt;/kbd&gt;. You can also have
-&lt;q&gt;inline quotes with q&lt;/q&gt;, or &lt;samp&gt;results from an operation with samp&lt;/samp&gt; or a
-&lt;var&gt;variable&lt;/var&gt;, or an &lt;output&gt;output&lt;/output&gt;, also there's &lt;small&gt;small text&lt;/small&gt;, text
-with&lt;sup&gt;superscript&lt;/sup&gt;, or text with&lt;sub&gt;subscript&lt;/sub&gt;... not to mention you can
-have time too. For example, this paragraph was originally written in &lt;time&gt;2020&lt;/time&gt;.
-Not to forget about &lt;dfn&gt;definitions&lt;/dfn&gt;! Also &lt;del&gt;del was deleted&lt;/del&gt; and 
-&lt;ins&gt;ins was inserted&lt;/ins&gt;.</code></pre>
-            </details>
-          </section>
-
-          <section id="fancy-links">
-            <h2>Fancy links</h2>
-            <p>Some links may be special depending on their href or their rel:</p>
-            <p>
-              <a href="mailto:alvaromontoro@gmail.com">Link to alvaromontoro@gmail.com</a><br />
-              <a href="tel:fakenumber">Link to a number (call)</a><br />
-              <a href="sms:fakenumber">Link to a number (message)</a><br />
-              <a href="file:index.html">Link to a file</a><br />
-              <a href="file:index.html" download>Link to download a file</a><br />
-              <a rel="external" href="#">Link to an external site</a><br />
-              <a rel="bookmark" href="#">Link to bookmark</a>
-            </p>
-
-            <p>
-              Those special links will work inline too!
-              <a href="mailto:alvaromontoro@gmail.com">Email me!</a> or see an
-              <a rel="external" href="https://alvaromontoro.com">Link to an external site</a>.
-            </p>
-
-            <p>
-              <strong>Important:</strong> The icons are not available in the lite version of
-              the library.
-            </p>
-
-            <details class="demo">
-              <summary>View code</summary>
-              <pre><code>&lt;a href="mailto:alvaromontoro@gmail.com"&gt;Link to alvaromontoro@gmail.com&lt;/a&gt;&lt;br /&gt;
-&lt;a href="tel:fakenumber"&gt;Link to a number (call)&lt;/a&gt;&lt;br /&gt;
-&lt;a href="sms:fakenumber"&gt;Link to a number (message)&lt;/a&gt;&lt;br /&gt;
-&lt;a href="file:index.html"&gt;Link to a file&lt;/a&gt;&lt;br /&gt;
-&lt;a href="file:index.html" download&gt;Link to download a file&lt;/a&gt;&lt;br /&gt;
-&lt;a rel="external" href="#"&gt;Link to an external site&lt;/a&gt;&lt;br /&gt;
-&lt;a rel="bookmark" href="#"&gt;Link to bookmark&lt;/a&gt;</code></pre>
-            </details>            
-          </section>
-
-          <section id="headings">
-            <h2>Headings</h2>
-            <h1>Heading Level 1</h1>
-            <h2>Heading Level 2</h2>
-            <h3>Heading Level 3</h3>
-            <h4>Heading Level 4</h4>
-            <h5>Heading Level 5</h5>
-            <h6>Heading Level 6</h6>
-            <hgroup>
-              <h2>Heading level 2 within hgroup</h2>
-              <h3>Heading level 3 within hgroup</h3>
-            </hgroup>
-
-            <details>
-              <summary>View code</summary>
-              <pre><code>&lt;h1&gt;Heading Level 1&lt;/h1&gt;
-&lt;h2&gt;Heading Level 2&lt;/h2&gt;
-&lt;h3&gt;Heading Level 3&lt;/h3&gt;
-&lt;h4&gt;Heading Level 4&lt;/h4&gt;
-&lt;h5&gt;Heading Level 5&lt;/h5&gt;
-&lt;h6&gt;Heading Level 6&lt;/h6&gt;
-&lt;hgroup&gt;
-  &lt;h2&gt;Heading level 2 within hgroup&lt;/h2&gt;
-  &lt;h3&gt;Heading level 3 within hgroup&lt;/h3&gt;
-&lt;/hgroup&gt;</code></pre>
-            </details>
-          </section>
-
-          <section id="lists">
-            <h2>Lists</h2>
-            <ul>
-              <li>Unordered list item 1</li>
-              <li>
-                Unordered list item 2
-                <ul>
-                  <li>Unordered list sub-item 1</li>
-                  <li>Unordered list sub-item 2</li>
-                </ul>
-              </li>
-              <li>Unordered list item 3</li>
-              <li>Unordered list item 4</li>
-            </ul>
-            <ol>
-              <li>Ordered list item 1</li>
-              <li>
-                Ordered list item 2
-                <ol>
-                  <li>Ordered list sub-item 1</li>
-                  <li>Ordered list sub-item 2</li>
-                </ol>
-              </li>
-              <li>Ordered list item 3</li>
-              <li>Ordered list item 4</li>
-            </ol>
-
-            <details>
-              <summary>View code</summary>
-              <pre><code>&lt;ul&gt;
-  &lt;li&gt;Unordered list item 1&lt;/li&gt;
-  &lt;li&gt;
-    Unordered list item 2
-    &lt;ul&gt;
-      &lt;li&gt;Unordered list sub-item 1&lt;/li&gt;
-      &lt;li&gt;Unordered list sub-item 2&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Unordered list item 3&lt;/li&gt;
-  &lt;li&gt;Unordered list item 4&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-  &lt;li&gt;Ordered list item 1&lt;/li&gt;
-  &lt;li&gt;
-    Ordered list item 2
-    &lt;ol&gt;
-      &lt;li&gt;Ordered list sub-item 1&lt;/li&gt;
-      &lt;li&gt;Ordered list sub-item 2&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Ordered list item 3&lt;/li&gt;
-  &lt;li&gt;Ordered list item 4&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-            </details>
-          </section>
-        </article>
-
-        <article>
-          <section id="inputs">
-            <h2>Inputs</h2>
-
-            <form class="flex">
-              <p>
-                <label for="input">Input without type</label><br />
-                <input id="input" placeholder="Placeholder" />
-              </p>
-              <p>
-                <label for="input-text">Input with type="text"</label><br />
-                <input type="text" id="input-text" />
-              </p>
-              <p>
-                <label for="input-date">Input with type="date"</label><br />
-                <input type="date" id="input-date" />
-              </p>
-              <p>
-                <label for="input-datetime-local">Input with type="datetime-local"</label><br />
-                <input type="datetime-local" id="input-datetime-local" />
-              </p>
-              <p>
-                <label for="input-email">Input with type="email"</label><br />
-                <input type="email" id="input-email" />
-              </p>
-              <p>
-                <label for="input-month">Input with type="month"</label><br />
-                <input type="month" id="input-month" />
-              </p>
-              <p>
-                <label for="input-number">Input with type="number"</label><br />
-                <input type="number" id="input-number" />
-              </p>
-              <p>
-                <label for="input-password">Input with type="password"</label><br />
-                <input type="password" id="input-password" />
-              </p>
-              <p>
-                <label for="input-search">Input with type="search"</label><br />
-                <input type="search" id="input-search" />
-              </p>
-              <p>
-                <label for="input-tel">Input with type="tel"</label><br />
-                <input type="tel" id="input-tel" />
-              </p>
-              <p>
-                <label for="input-time">Input with type="time"</label><br />
-                <input type="time" id="input-time" />
-              </p>
-              <p>
-                <label for="input-url">Input with type="url"</label><br />
-                <input type="url" id="input-url" />
-              </p>
-              <p>
-                <label for="input-week">Input with type="week"</label><br />
-                <input type="week" id="input-week" />
-              </p>
-              <p>
-                <span>Input with type="hidden" ;)</span><br />
-                <input id="hidden" type="hidden" />
-              </p>
-            </form>
-
-            <p>
-              <strong>Important:</strong> The icons are not available in the lite version of
-              the library.
-            </p>
-
-            <h3>Input States</h3>
-            <form class="flex">
-              <p>
-                <label for="input-text-standard">Standard</label><br />
-                <input type="text" id="input-text-standard" />
-              </p>
-              <p>
-                <label for="input-text-disabled">Disabled</label><br />
-                <input type="text" id="input-text-disabled" disabled />
-              </p>
-              <p>
-                <label for="input-text-invalid">Invalid</label><br />
-                <input type="text" id="input-text-invalid" required value="" />
-              </p>
-              <p>
-                <label for="input-text-readonly">Read Only</label><br />
-                <input type="text" id="input-text-readonly" readonly />
-              </p>
-            </form>
-
-            <h3>Textareas</h3>
-            <form>
-              <p>
-                <label for="textarea">Textarea</label><br />
-                <textarea id="textarea"></textarea>
-              </p>
-            </form>
-          </section>
-        </article>
-
-        <article>
-          <section class="section">
-            <h2>Buttons</h2>
-            <div>
-              <div class="flex">
-                <p>
-                  <span>Button</span><br />
-                  <button>Button</button>
-                </p>
-                <p>
-                  <span>Disabled button</span><br />
-                  <button disabled>Disabled Button</button>
-                </p>
-              </div>
-              <div class="flex">
-                <p>
-                  <label for="input-reset">Input type="reset"</label><br />
-                  <input type="reset" id="input-reset" value="Input Reset" />
-                </p>
-                <p>
-                  <label for="input-reset-disabled">Input type="reset"</label><br />
-                  <input type="reset" id="input-reset-disabled" value="Disabled Input Reset" disabled />
-                </p>
-              </div>
-              <div class="flex">
-                <p>
-                  <label for="input-button">Input type="button"</label><br />
-                  <input type="button" id="input-button" value="Input Button" />
-                </p>
-                <p>
-                  <label for="input-button">Input type="button"</label><br />
-                  <input type="button" id="input-button" value="Disabled Input Button"  disabled />
-                </p>
-              </div>
-              <div class="flex">
-                <p>
-                  <label for="input-submit">Input type="submit"</label><br />
-                  <input type="submit" id="input-submit" value="Input Submit" />
-                </p>
-                <p>
-                  <label for="input-submit">Input type="submit"</label><br />
-                  <input type="submit" id="input-submit" value="Disabled Input Submit" disabled />
-                </p>
-              </div>
-              <p>
-                <label for="input-image">Input type="image"</label><br />
-                <input type="image" id="input-image" alt="Input" src="./static/input-image.png" />
-              </p>
-            </div>
-          </section>
+          <ul>
+            <li>Regular: it has styles for all the elements, including icons, background images, and widgets.</li>
+            <li>Lite: it has just the styles (no graphics or widgets).</li>
+          </ul>
+          <p>
+            <b>The lite version is 3KB once minified and gzipped.</b> But if you want to have all the additional features,
+            the regular version is a good choice (and it's only 5KB minified and gzipped, so there's not much 
+            difference in size.)
+          </p>
+          <p>
+            This demo page was built using the regular version of Almond.CSS, and adding some extra styles for the
+            layout. Use the menu on the left side (top if you are on mobile) to see all the available elements 
+            and styles.
+          </p>
         </article>
       </main>
     </div>
