@@ -1,6 +1,6 @@
 {
   "name": "almond.css",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Collection of CSS styles to make simple websites look nicer.",
   "main": "dist/almond.css",
   "scripts": {
