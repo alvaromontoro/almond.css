@@ -13,23 +13,85 @@ The main goals of this project are:
 - **Lightweight**: limit the size to 3KB (gzipped).
 - **Keep it simple** but elegant.
 
-## CDN
+---
+## How to include Almond.CSS in your project
 
-We are working on CDN/NPM publication options. In the meantime, an alternative for those interested, is to use [jsDelivr](https://www.jsdelivr.com/), which works for both github and npm.
+### NPM
 
-Example stylesheet reference (**You only need one, not both**):
+Almond.CSS is available now as an npm package to make it easy to install and use on any project. 
+Steps to include it (using `npm`):
+
+1. Install the package:
+
+        npm install almond.css
+
+2. Add the import to the app entry point (e.g. in apps created with create-react-app, it would be App.js):
+
+        import "almond.css/dist/almond.min.js";
+
+3. Build and start your app
+
+### CDN
+
+There are CDN services like [jsDelivr](https://www.jsdelivr.com/) or [unpkg](https://unpkg.com), that work with 
+github and npm libraries, providing a fast and reliable delivery.
+
+You can include Almond.CSS using the `<link>` tag (**You only need one, not all**):
 
 ```html
-<!-- loads all the styles, including icons and images -->
+<!-- loads all the styles (including icons and images) from jsDelivr -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alvaromontoro/almond.css@latest/dist/almond.min.css" />
 
-<!-- loads a lighter version of the library: no icons or images -->
+<!-- loads the light version of the library from jsDelivr -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alvaromontoro/almond.css@latest/dist/almond.lite.min.css" />
+
+<!-- loads all the styles (including icons and images) from unpkg -->
+<link rel="stylesheet" href="https://unpkg.com/almond.css@latest/dist/almond.min.css" />
+
+<!-- loads the light version of the library from unpkg -->
+<link rel="stylesheet" href="https://unpkg.com/almond.css@latest/dist/almond.lite.min.css" />
 ```
 
-More CDN, NPM options coming up soon.
+---
 
-## Building and running locally
+## Theming
+
+We based the theming on CSS variables and HSL colors. HSL allows to define a color based on three parameters: Hue, Saturation, and Lightness. Provide a primary and secondary colors using HSL, and see the demo page change automatically.
+
+The default primary color is a dark pale blue, and the default secondary color is a medium gray.
+
+Some values that devs can specify:
+
+| Variable               | Description                                       | Default Value                  |
+| ---------------------- | ------------------------------------------------- | ------------------------------ |
+| `--primaryH`           | Primary color hue value                           | `210`                          |
+| `--primaryS`           | Primary color saturation value                    | `50%`                          |
+| `--primaryL`           | Primary color lightness value                     | `40%`                          |
+| `--primary-bg`         | Primary color background                          | `white`                        |
+| `--secondaryH`         | Secondary color hue value                         | `0`                            |
+| `--secondaryS`         | Secondary color saturation value                  | `0%`                           |
+| `--secondaryL`         | Secondary color lightness value                   | `13%`                          |
+| `--secondary-bg`       | Secondary color background                        | `white`                        |
+| `--font-family`        | Set of fonts for the text                         | `Helvetica, Arial, sans-serif` |
+| `--font-size-root`     | Default font size (root)                          | `16px`                         |
+| `--font-weight-bolder` | Font weight value (bolder text)                   | `700`                          |
+| `--font-weight-bold`   | Font weight value (bold text)                     | `400`                          |
+| `--font-weight-normal` | Font weight value (normal text)                   | `200`                          |
+| `--font-weight-thin`   | Font weight value (thin text)                     | `100`                          |
+| `--line-height`        | Line-height of paragraphs and lists               | `1.75rem`                      |
+| `--heading-margin`     | Margin applied to the headings and heading groups | `1.5rem 0 1rem`                |
+| `--border-radius`      | Border radius                                     | `2px`                          |
+
+### Widgets
+
+By combining some "not-too common" HTML attributes with some CSS variables, we can generate a series of widgets without the need to use JavaScript or HTML classes.
+
+Here is a list of the widgets available at the moment:
+
+- Circular progress bar
+
+
+## Development
 
 Here are the instructions on how to copy the code of this library into your local machine and build it. They use `npm`, but you can run similar commands with `yarn`.
 
@@ -75,39 +137,3 @@ npm run watch
 ```
 
 Notice that only the `almond.css` file (used in the demo html page) will be generated. Once you are ready to build for production, you will have to run the `build` script to generate the light and minified versions described above.
-
-## Theming
-
-We based the theming on CSS variables and HSL colors. HSL allows to define a color based on three parameters: Hue, Saturation, and Lightness. Provide a primary and secondary colors using HSL, and see the demo page change automatically.
-
-The default primary color is a dark pale blue, and the default secondary color is a medium gray.
-
-Some values that devs can specify:
-
-| Variable               | Description                                       | Default Value                  |
-| ---------------------- | ------------------------------------------------- | ------------------------------ |
-| `--primaryH`           | Primary color hue value                           | `210`                          |
-| `--primaryS`           | Primary color saturation value                    | `50%`                          |
-| `--primaryL`           | Primary color lightness value                     | `40%`                          |
-| `--primary-bg`         | Primary color background                          | `white`                        |
-| `--secondaryH`         | Secondary color hue value                         | `0`                            |
-| `--secondaryS`         | Secondary color saturation value                  | `0%`                           |
-| `--secondaryL`         | Secondary color lightness value                   | `13%`                          |
-| `--secondary-bg`       | Secondary color background                        | `white`                        |
-| `--font-family`        | Set of fonts for the text                         | `Helvetica, Arial, sans-serif` |
-| `--font-size-root`     | Default font size (root)                          | `16px`                         |
-| `--font-weight-bolder` | Font weight value (bolder text)                   | `700`                          |
-| `--font-weight-bold`   | Font weight value (bold text)                     | `400`                          |
-| `--font-weight-normal` | Font weight value (normal text)                   | `200`                          |
-| `--font-weight-thin`   | Font weight value (thin text)                     | `100`                          |
-| `--line-height`        | Line-height of paragraphs and lists               | `1.75rem`                      |
-| `--heading-margin`     | Margin applied to the headings and heading groups | `1.5rem 0 1rem`                |
-| `--border-radius`      | Border radius                                     | `2px`                          |
-
-## Widgets
-
-By combining some "not-too common" HTML attributes with some CSS variables, we can generate a series of widgets without the need to use JavaScript or HTML classes.
-
-Here is a list of the widgets available at the moment:
-
-- Circular progress bar
