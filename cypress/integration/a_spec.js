@@ -1,6 +1,6 @@
 describe("a", () => {
   before(() => {
-    cy.visit("/demo/index.html");
+    cy.visit("/demo/old/index.html");
   });
 
   it('should have proper link color', () => {
