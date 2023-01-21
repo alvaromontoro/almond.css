@@ -1,6 +1,6 @@
 {
   "name": "almond.css",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "Collection of CSS styles to make simple websites look nicer.",
   "main": "dist/almond.css",
   "scripts": {
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alvaromontoro/almond.css"
+    "url": "git+https://github.com/alvaromontoro/almond.css.git"
   },
   "keywords": [
     "css",
@@ -24,10 +24,11 @@
     "styles"
   ],
   "author": "Alvaro Montoro <alvaromontoro@gmail.com> (https://alvaromontoro.com)",
-  "license": "GNU General Public License v3.0",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/alvaromontoro/almond.css/issues"
   },
+  "files": [ "/dist" ],
   "homepage": "https://github.com/alvaromontoro/almond.css",
   "devDependencies": {
     "node-sass": "^7.0.3",
