@@ -1,0 +1,16 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex > * {
+  margin-right: 1rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section .section {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,90 @@
+<section class="section">
+  <h2>Dialog</h2>
+  <dialog id="dialog-1">
+    <div>This is a test dialog</div>
+    <div>
+      <button onclick="document.querySelector('#dialog-1').removeAttribute('open');">Close Dialog</button>
+    </div>
+  </dialog>
+  <dialog id="dialog-2">
+    <h2>Dialog with heading</h2>
+    <div>This is a test dialog</div>
+    <div>
+      <button onclick="document.querySelector('#dialog-2').removeAttribute('open');">Close Dialog</button>
+    </div>
+  </dialog>
+  <dialog id="dialog-3">
+    <div>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+      <p>This is a test dialog with a long text.</p>
+    </div>
+    <button onclick="document.querySelector('#dialog-3').removeAttribute('open');">Close Dialog</button>
+  </dialog>
+  <button onclick="document.querySelector('#dialog-1').setAttribute('open', '');">Open Dialog</button>
+  <button onclick="document.querySelector('#dialog-2').setAttribute('open', '');">Open Dialog with Heading</button>
+  <button onclick="document.querySelector('#dialog-3').setAttribute('open', '');">Open Dialog with Long Text</button>
+        
+  <details class="demo">
+    <summary>View code</summary>
+    <pre><code>&lt;dialog id="dialog-1"&gt;
+  &lt;div&gt;This is a test dialog&lt;/div&gt;
+  &lt;div&gt;
+    &lt;button onclick="document.querySelector('#dialog-1').removeAttribute('open');"&gt;Close Dialog&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/dialog&gt;
+
+&lt;dialog id="dialog-2"&gt;
+  &lt;h2&gt;Dialog with heading&lt;/h2&gt;
+  &lt;div&gt;This is a test dialog&lt;/div&gt;
+  &lt;div&gt;
+    &lt;button onclick="document.querySelector('#dialog-2').removeAttribute('open');"&gt;Close Dialog&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/dialog&gt;
+
+&lt;dialog id="dialog-3"&gt;
+  &lt;div&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+    &lt;p&gt;This is a test dialog with a long text.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;button onclick="document.querySelector('#dialog-3').removeAttribute('open');"&gt;Close Dialog&lt;/button&gt;
+&lt;/dialog&gt;
+
+&lt;button onclick="document.querySelector('#dialog-1').setAttribute('open', '');"&gt;Open Dialog&lt;/button&gt;
+&lt;button onclick="document.querySelector('#dialog-2').setAttribute('open', '');"&gt;Open Dialog with Heading&lt;/button&gt;
+&lt;button onclick="document.querySelector('#dialog-3').setAttribute('open', '');"&gt;Open Dialog with Long Text&lt;/button&gt;</code></pre>
+  </details>
+</section>
