@@ -18,8 +18,7 @@ The main goals of this project are:
 
 ### NPM
 
-Almond.CSS is available now as an npm package to make it easy to install and use on any project. 
-Steps to include it (using `npm`):
+Almond.CSS is available as an npm package to make it easy to install and use on any project. These are the steps to include it in any project (using `npm`):
 
 1. Install the package:
 
