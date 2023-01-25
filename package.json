@@ -28,10 +28,14 @@
   "bugs": {
     "url": "https://github.com/alvaromontoro/almond.css/issues"
   },
-  "files": [ "/dist" ],
+  "files": [
+    "/dist"
+  ],
   "homepage": "https://github.com/alvaromontoro/almond.css",
   "devDependencies": {
+    "cypress": "^9.2.0",
+    "husky": "^8.0.3",
     "node-sass": "^7.0.3",
-    "cypress": "^9.2.0"
+    "save-dev": "^0.0.1-security"
   }
 }
