@@ -17,6 +17,8 @@ export const FONT_WEIGHT_BOLDER = '700';
 
 export const BORDER_RADIUS = '2px';
 
+export const LINE_HEIGHT = '28px';
+
 export const HEADING_MARGIN = '24px 0px 16px';
 
 /**
