@@ -10,6 +10,8 @@ export const SECONDARY_LIGHT = 'rgb(191, 191, 191)';
 export const SECONDARY_LIGHTER = 'rgb(245, 245, 245)';
 export const SECONDARY_DARKER = 'rgb(7, 7, 7)';
 
+export const ERROR_COLOR = 'rgb(221, 0, 0)';
+
 export const FONT_WEIGHT_THIN = '100';
 export const FONT_WEIGHT_REGULAR = '200';
 export const FONT_WEIGHT_BOLD = '400';
