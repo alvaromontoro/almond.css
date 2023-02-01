@@ -3,6 +3,7 @@
  */
 export const PRIMARY_COLOR = 'rgb(51, 102, 153)'; // equivalent to hsl(210, 50%, 40%)
 export const PRIMARY_BG = 'rgb(255, 255, 255)';
+export const PRIMARY_LIGHTER = 'rgb(240, 245, 250)';
 export const PRIMARY_BRIGHT = 'rgb(214, 230, 245)';
 export const SECONDARY_COLOR = 'rgb(33, 33, 33)'; // equivalent to hsl(0, 0%, 13%)
 export const SECONDARY_BG = 'rgb(255, 255, 255)';
