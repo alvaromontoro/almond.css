@@ -12,6 +12,8 @@ export const SECONDARY_DARKER = 'rgb(7, 7, 7)';
 
 export const ERROR_COLOR = 'rgb(221, 0, 0)';
 
+export const FONT_FAMILY = 'Helvetica, Arial, sans-serif';
+export const FONT_SIZE_ROOT = '16px';
 export const FONT_WEIGHT_THIN = '100';
 export const FONT_WEIGHT_REGULAR = '200';
 export const FONT_WEIGHT_BOLD = '400';
