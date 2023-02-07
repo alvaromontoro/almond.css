@@ -1,14 +1,8 @@
 import {
   BORDER_RADIUS,
-  ERROR_COLOR,
-  FONT_WEIGHT_REGULAR,
   FONT_WEIGHT_BOLD,
-  FONT_WEIGHT_BOLDER,
   PRIMARY_COLOR,
   PRIMARY_BG,
-  PRIMARY_DARK,
-  PRIMARY_LIGHTER,
-  SECONDARY_COLOR,
   SECONDARY_LIGHT,
   SECONDARY_LIGHTER,
   remToPx
@@ -292,7 +286,7 @@ describe("buttons", () => {
       .should('equal', SECONDARY_LIGHT);
   });
 
-  
+
 
   it('should have default styles for input type=button', () => {
     cy.get("button")
