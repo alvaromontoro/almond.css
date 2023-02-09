@@ -339,7 +339,7 @@ input[type="checkbox"] {
     box-shadow: inset 0 0 0 0.185rem var(--secondary-lighter);
     background: var(--secondary-lighter); }
 
-select:not([multiple]) {
+select:not([multiple]):not([disabled]) {
   -webkit-appearance: none;
   appearance: none;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M0,10 20,30 40,10' fill='none' stroke='%23999' stroke-width='2'/></svg>");
@@ -348,7 +348,7 @@ select:not([multiple]) {
   background-position: right 0.5em center;
   background-color: Field;
   padding-right: 2em; }
-  select:not([multiple]):hover, select:not([multiple]):active {
+  select:not([multiple]):not([disabled]):hover, select:not([multiple]):not([disabled]):active {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M0,10 20,30 40,10' fill='none' stroke='%23222' stroke-width='2'/></svg>"); }
 
 select[multiple] {

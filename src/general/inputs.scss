@@ -198,7 +198,7 @@ input[type="checkbox"] {
 }
 
 // select
-select:not([multiple]) {
+select:not([multiple]):not([disabled]) {
   -webkit-appearance: none;
   appearance: none;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M0,10 20,30 40,10' fill='none' stroke='%23999' stroke-width='2'/></svg>");
