@@ -27,9 +27,7 @@
   --warning: #ec0;
   --info: #369;
   --correct: #080;
-}
 
-:root {
   /* Calculated colors */
   --primary: hsl(var(--primaryH), var(--primaryS), var(--primaryL));
   --primary-bright: hsl(var(--primaryH), calc(var(--primaryS) * 1.25), 90%); // #7ef;
