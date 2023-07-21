@@ -194,6 +194,9 @@ input[type="checkbox"] {
   &:disabled {
     box-shadow: inset 0 0 0 0.185rem var(--secondary-lighter);
     background: var(--secondary-lighter);
+    &:checked {
+      background: var(--secondary-light);
+    }
   }
 }
 
