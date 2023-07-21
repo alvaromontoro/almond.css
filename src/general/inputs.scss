@@ -30,7 +30,7 @@ select {
 
   &[disabled],
   &:disabled {
-    background: var(--secondary-lighter);
+    background-color: var(--secondary-lighter);
     color: var(--secondary-light);
   }
 
@@ -194,11 +194,14 @@ input[type="checkbox"] {
   &:disabled {
     box-shadow: inset 0 0 0 0.185rem var(--secondary-lighter);
     background: var(--secondary-lighter);
+    &:checked {
+      background: var(--secondary-light);
+    }
   }
 }
 
 // select
-select:not([multiple]):not([disabled]) {
+select:not([multiple]):not([disabled]):not(:disabled) {
   -webkit-appearance: none;
   appearance: none;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M0,10 20,30 40,10' fill='none' stroke='%23999' stroke-width='2'/></svg>");
