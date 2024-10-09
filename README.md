@@ -26,7 +26,7 @@ Almond.CSS is available as an npm package to make it easy to install and use on 
 
 2. Add the import to the app entry point (e.g. in apps created with create-react-app, it would be App.js):
 
-        import "almond.css/dist/almond.min.js";
+        import "almond.css/dist/almond.min.css";
 
 3. Build and start your app
 
