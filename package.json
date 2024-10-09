@@ -35,7 +35,7 @@
   "devDependencies": {
     "cypress": "^9.2.0",
     "husky": "^8.0.3",
-    "node-sass": "^7.0.3",
+    "node-sass": "^9.0.0",
     "save-dev": "^0.0.1-security"
   }
 }
