@@ -30,7 +30,7 @@ select {
 
   &[disabled],
   &:disabled {
-    background: var(--secondary-lighter);
+    background-color: var(--secondary-lighter);
     color: var(--secondary-light);
   }
 
