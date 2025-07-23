@@ -1,18 +1,18 @@
 {
   "name": "almond.css",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "description": "Collection of CSS styles to make simple websites look nicer.",
   "main": "dist/almond.css",
   "scripts": {
     "build": "npm run build:raw && npm run build:min && npm run build:lite",
-    "build:raw": "node-sass src/index.scss dist/almond.css",
-    "build:min": "node-sass --output-style compressed src/index.scss dist/almond.min.css",
+    "build:raw": "sass src/index.scss dist/almond.css",
+    "build:min": "sass --style compressed src/index.scss dist/almond.min.css",
     "build:lite": "npm run build:lite:raw && npm run build:lite:min",
-    "build:lite:raw": "node-sass src/index.lite.scss dist/almond.lite.css",
-    "build:lite:min": "node-sass --output-style compressed src/index.lite.scss dist/almond.lite.min.css",
+    "build:lite:raw": "sass src/index.lite.scss dist/almond.lite.css",
+    "build:lite:min": "sass --style compressed src/index.lite.scss dist/almond.lite.min.css",
     "test": "cypress run",
     "test:open": "cypress open",
-    "watch": "node-sass -w src/index.scss dist/almond.css"
+    "watch": "sass --watch src/index.scss dist/almond.css"
   },
   "repository": {
     "type": "git",
@@ -33,9 +33,8 @@
   ],
   "homepage": "https://github.com/alvaromontoro/almond.css",
   "devDependencies": {
-    "cypress": "^9.2.0",
-    "husky": "^8.0.3",
-    "node-sass": "^7.0.3",
-    "save-dev": "^0.0.1-security"
+    "cypress": "^14.5.2",
+    "husky": "^9.1.7",
+    "sass": "^1.89.2"
   }
 }

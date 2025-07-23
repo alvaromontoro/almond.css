@@ -6,52 +6,52 @@
 /************************************************************/
 
 // variables
-@import "./general/variables.scss";
+@use "general/variables.scss";
 
 // main page styles
-@import "./tags/html.scss";
-@import "./tags/body.scss";
+@use "tags/html.scss";
+@use "tags/body.scss";
 
 // general stylings
-@import "./general/pseudo.scss";
-@import "./general/headings.scss";
-@import "./general/lists.scss";
-@import "./general/tables.scss";
-@import "./general/inputs.scss";
+@use "general/pseudo.scss";
+@use "general/headings.scss";
+@use "general/lists.scss";
+@use "general/tables.scss";
+@use "general/inputs.scss";
 
 // tag specific styles
-@import "./tags/a.scss";
-@import "./tags/abbr.scss";
-@import "./tags/address.scss";
-@import "./tags/audio.scss";
-@import "./tags/b.scss";
-@import "./tags/blockquote.scss";
-@import "./tags/canvas.scss";
-@import "./tags/cite.scss";
-@import "./tags/code.scss";
-@import "./tags/del.scss";
-@import "./tags/dialog.scss";
-@import "./tags/details.scss";
-@import "./tags/dfn.scss";
-@import "./tags/dl.scss";
-@import "./tags/fieldset.scss";
-@import "./tags/figure.scss";
-@import "./tags/hgroup.scss";
-@import "./tags/hr.scss";
-@import "./tags/img.scss";
-@import "./tags/ins.scss";
-@import "./tags/kbd.scss";
-@import "./tags/mark.scss";
-@import "./tags/output.scss";
-@import "./tags/p.scss";
-@import "./tags/pre.scss";
-@import "./tags/progress.scss";
-@import "./tags/q.scss";
-@import "./tags/s.scss";
-@import "./tags/samp.scss";
-@import "./tags/small.scss";
-@import "./tags/sub.scss";
-@import "./tags/svg.scss";
-@import "./tags/u.scss";
-@import "./tags/var.scss";
-@import "./tags/video.scss";
+@use "tags/a.scss";
+@use "tags/abbr.scss";
+@use "tags/address.scss";
+@use "tags/audio.scss";
+@use "tags/b.scss";
+@use "tags/blockquote.scss";
+@use "tags/canvas.scss";
+@use "tags/cite.scss";
+@use "tags/code.scss";
+@use "tags/del.scss";
+@use "tags/dialog.scss";
+@use "tags/details.scss";
+@use "tags/dfn.scss";
+@use "tags/dl.scss";
+@use "tags/fieldset.scss";
+@use "tags/figure.scss";
+@use "tags/hgroup.scss";
+@use "tags/hr.scss";
+@use "tags/img.scss";
+@use "tags/ins.scss";
+@use "tags/kbd.scss";
+@use "tags/mark.scss";
+@use "tags/output.scss";
+@use "tags/p.scss";
+@use "tags/pre.scss";
+@use "tags/progress.scss";
+@use "tags/q.scss";
+@use "tags/s.scss";
+@use "tags/samp.scss";
+@use "tags/small.scss";
+@use "tags/sub.scss";
+@use "tags/svg.scss";
+@use "tags/u.scss";
+@use "tags/var.scss";
+@use "tags/video.scss";

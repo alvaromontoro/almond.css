@@ -1,7 +1,7 @@
-@import "./index.lite.scss";
+@use "index.lite.scss";
 
 // extensions
-@import "./general/extension.images.scss";
+@use "general/extension.images.scss";
 
 // widgets
-@import "./widgets/progress-bar.scss";
+@use "widgets/progress-bar.scss";
