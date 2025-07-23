@@ -1,15 +1,15 @@
 /**
  * almond.css variables (default values)
  */
-export const PRIMARY_COLOR = 'rgb(51, 102, 153)'; // equivalent to hsl(210, 50%, 40%)
+export const PRIMARY_COLOR = 'rgb(51, 102, 153)'; // equivalent to #369
 export const PRIMARY_BG = 'rgb(255, 255, 255)';
-export const PRIMARY_LIGHTER = 'rgb(240, 245, 250)';
-export const PRIMARY_BRIGHT = 'rgb(214, 230, 245)';
-export const SECONDARY_COLOR = 'rgb(33, 33, 33)'; // equivalent to hsl(0, 0%, 13%)
+export const PRIMARY_LIGHTER = 'oklch(0.949921 0.00990976 10.4542)';
+export const PRIMARY_BRIGHT = 'oklch(0.9 0.123312 250.447)';
+export const SECONDARY_COLOR = 'rgb(34, 34, 34)'; // equivalent to #222
 export const SECONDARY_BG = 'rgb(255, 255, 255)';
-export const SECONDARY_LIGHT = 'rgb(191, 191, 191)';
-export const SECONDARY_LIGHTER = 'rgb(245, 245, 245)';
-export const SECONDARY_DARKER = 'rgb(7, 7, 7)';
+export const SECONDARY_LIGHT = 'oklch(0.812986 0.0000404955 23.72)';
+export const SECONDARY_LIGHTER = 'oklch(0.925191 0.0000460773 23.761)';
+export const SECONDARY_DARKER = 'oklch(0.125981 0.00000629307 23.5148)';
 
 export const ERROR_COLOR = 'rgb(221, 0, 0)';
 
