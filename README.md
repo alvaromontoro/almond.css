@@ -63,13 +63,9 @@ Some values that devs can specify:
 
 | Variable               | Description                                       | Default Value                  |
 | ---------------------- | ------------------------------------------------- | ------------------------------ |
-| `--primaryH`           | Primary color hue value                           | `210`                          |
-| `--primaryS`           | Primary color saturation value                    | `50%`                          |
-| `--primaryL`           | Primary color lightness value                     | `40%`                          |
+| `--primary`            | Primary color                                     | `#369`                         |
 | `--primary-bg`         | Primary color background                          | `white`                        |
-| `--secondaryH`         | Secondary color hue value                         | `0`                            |
-| `--secondaryS`         | Secondary color saturation value                  | `0%`                           |
-| `--secondaryL`         | Secondary color lightness value                   | `13%`                          |
+| `--secondary`          | Secondary color.                                  | `#222`                         |
 | `--secondary-bg`       | Secondary color background                        | `white`                        |
 | `--font-family`        | Set of fonts for the text                         | `Helvetica, Arial, sans-serif` |
 | `--font-size-root`     | Default font size (root)                          | `16px`                         |

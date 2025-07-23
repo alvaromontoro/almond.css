@@ -12,7 +12,8 @@ blockquote {
 
   &::before {
     content: open-quote;
-    color: hsla(var(--secondaryH), var(--secondaryS), var(--secondaryL), 0.15);
+    /* TODO: UPDATE THESE COLORS */
+    color: color-mix(var(--secondary) 15%, #0000 85%);
     font-size: 5rem;
     font-family: "Times New Roman", "Times", serif;
     left: 0.25rem;

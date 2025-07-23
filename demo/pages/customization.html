@@ -1,12 +1,12 @@
 <h2>Customization</h2>
 <p>
-  Almond.CSS can be customized by indicating some values for color, lightness, font sizes and 
+  Almond.CSS can be customized by setting CSS custom properties for colors, fonts, sizes and 
   weights, etc.
 </p>
 <p>
   Update the table below to see live how each of the properties affect the site, and make it your
-  own (for example, change the hue value). Then, you can copy the resulting code and place it on 
-  top of your CSS or HTML file and it will apply automatically to your site!
+  own. Then, you can copy the resulting code and place it on top of your CSS or HTML file and it 
+  will apply automatically to your site!
 </p>
 <p>
   <strong>Important:</strong> this demo requires JavaScript enabled.
@@ -23,29 +23,14 @@
     </thead>
     <tbody>
       <tr>
-        <th scope="row"><code>--primaryH</code></th>
-        <td id="primaryH">
-          Primary color hue value. This value should be between 0 and 360. <strong>Primary is the color of the main elements (e.g. buttons, titles, etc.)</strong>
+        <th scope="row"><code>--primary</code></th>
+        <td id="primary">
+          Primary color. This value must be a color. <strong>Primary is the color of the main 
+          elements (e.g. buttons, titles, etc.)</strong>
         </td>
-        <td>210</td>
+        <td>#369</td>
         <td>
-          <input class="input" name="primaryH" type="range" min="0" max="360" value="210" oninput="updateStyles()" aria-labelledby="primaryH" />
-        </td>
-      </tr>
-      <tr>
-        <th scope="row"><code>--primaryS</code></th>
-        <td id="primaryS">Primary color saturation value (how vibrant the color wil be). This value should be a percentage 0-100.</td>
-        <td>50%</td>
-        <td>
-          <input class="input" name="primaryS" type="range" min="0" max="100" value="50" data-unit="%" oninput="updateStyles()" aria-labelledby="primaryS" />
-        </td>
-      </tr>
-      <tr>
-        <th scope="row"><code>--primaryL</code></th>
-        <td id="primaryL">Primary color lightness value (how light/dark it will be). This value should be a percentage 0-100.</td>
-        <td>40%</td>
-        <td>
-          <input class="input" name="primaryL" type="range" min="0" max="100" value="40" data-unit="%" oninput="updateStyles()" aria-labelledby="primaryL" />
+          <input class="input" name="primary" type="color" value="#336699" oninput="updateStyles()" aria-labelledby="primary" />
         </td>
       </tr>
       <tr>
@@ -57,29 +42,13 @@
         </td>
       </tr>
       <tr>
-        <th scope="row"><code>--secondaryH</code></th>
-        <td id="secondaryH">
-          Secondary color hue value. This value should be between 0 and 360. <strong>Secondary is the color of the text and other elements.</strong>
+        <th scope="row"><code>--secondary</code></th>
+        <td id="secondary">
+          Secondary color. This value must be a color. <strong>Secondary is the color of the text and other elements.</strong>
         </td>
-        <td>0</td>
+        <td>#222</td>
         <td>
-          <input class="input" name="secondaryH" type="range" min="0" max="360" value="0" oninput="updateStyles()" aria-labelledby="secondaryH" />
-        </td>
-      </tr>
-      <tr>
-        <th scope="row"><code>--secondaryS</code></th>
-        <td id="secondaryS">Secondary color saturation value (how vibrant the color wil be). This value should be a percentage 0-100.</td>
-        <td>0%</td>
-        <td>
-          <input class="input" name="secondaryS" type="range" min="0" max="100" value="0" data-unit="%" oninput="updateStyles()" aria-labelledby="secondaryS" />
-        </td>
-      </tr>
-      <tr>
-        <th scope="row"><code>--secondaryL</code></th>
-        <td id="secondaryL">Secondary color lightness value (how light/dark it will be). This value should be a percentage 0-100.</td>
-        <td>13%</td>
-        <td>
-          <input class="input" name="secondaryL" type="range" min="0" max="100" value="13" data-unit="%" oninput="updateStyles()" aria-labelledby="secondaryL" />
+          <input class="input" name="secondary" type="color" value="#222222" oninput="updateStyles()" aria-labelledby="secondary" />
         </td>
       </tr>
       <tr>
@@ -211,13 +180,9 @@
   <p>Copy the following code at the top of your CSS, or in a style on the site's <code>&lt;head&gt;</code>:</p>
   <div>
     <textarea id="source-code" aria-label="CSS source code to copy to your files">:root {
-  --primaryH: 210;
-  --primaryS: 50%;
-  --primaryL: 40%;
+  --primary: #369;
   --primary-bg: #ffffff;
-  --secondaryH: 0;
-  --secondaryS: 0%;
-  --secondaryL: 13%;
+  --secondary: #222;
   --secondary-bg: #ffffff;
   --font-family: Roboto, Helvetica, Arial, sans-serif;
   --font-size-root: 16px;

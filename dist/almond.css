@@ -4,16 +4,165 @@
 /** Author:  Alvaro Montoro                                **/
 /** Project: https://github.com/alvaromontoro/almond.css   **/
 /************************************************************/
+/* Colors */
+@property --primary {
+  syntax: "<color>";
+  initial-value: #369;
+  inherits: true;
+}
+@property --primary-bright {
+  syntax: "<color>";
+  initial-value: #9cf;
+  inherits: true;
+}
+@property --primary-transparent {
+  syntax: "<color>";
+  initial-value: rgba(51, 102, 153, 0.0666666667);
+  inherits: true;
+}
+@property --primary-dark {
+  syntax: "<color>";
+  initial-value: #258;
+  inherits: true;
+}
+@property --primary-darker {
+  syntax: "<color>";
+  initial-value: #147;
+  inherits: true;
+}
+@property --primary-light {
+  syntax: "<color>";
+  initial-value: #47a;
+  inherits: true;
+}
+@property --primary-lighter {
+  syntax: "<color>";
+  initial-value: #58b;
+  inherits: true;
+}
+@property --primary-bg {
+  syntax: "<color>";
+  initial-value: #fff;
+  inherits: true;
+}
+@property --secondary {
+  syntax: "<color>";
+  initial-value: #222;
+  inherits: true;
+}
+@property --secondary-bright {
+  syntax: "<color>";
+  initial-value: #888;
+  inherits: true;
+}
+@property --secondary-transparent {
+  syntax: "<color>";
+  initial-value: rgba(34, 34, 34, 0.0666666667);
+  inherits: true;
+}
+@property --secondary-dark {
+  syntax: "<color>";
+  initial-value: #111;
+  inherits: true;
+}
+@property --secondary-darker {
+  syntax: "<color>";
+  initial-value: #000;
+  inherits: true;
+}
+@property --secondary-light {
+  syntax: "<color>";
+  initial-value: #333;
+  inherits: true;
+}
+@property --secondary-lighter {
+  syntax: "<color>";
+  initial-value: #444;
+  inherits: true;
+}
+@property --secondary-bg {
+  syntax: "<color>";
+  initial-value: #fff;
+  inherits: true;
+}
+@property --error {
+  syntax: "<color>";
+  initial-value: #d00;
+  inherits: true;
+}
+@property --warning {
+  syntax: "<color>";
+  initial-value: #ec0;
+  inherits: true;
+}
+@property --info {
+  syntax: "<color>";
+  initial-value: #369;
+  inherits: true;
+}
+@property --correct {
+  syntax: "<color>";
+  initial-value: #080;
+  inherits: true;
+}
+/* Font */
+@property --font-family {
+  syntax: "<custom-ident | string>#";
+  initial-value: Helvetica, Arial, sans-serif;
+  inherits: true;
+}
+@property --font-size-root {
+  syntax: "<length-percentage>";
+  initial-value: 16px;
+  inherits: true;
+}
+@property --font-weight-bolder {
+  syntax: "<number>";
+  initial-value: 700;
+  inherits: true;
+}
+@property --font-weight-bold {
+  syntax: "<number>";
+  initial-value: 400;
+  inherits: true;
+}
+@property --font-weight-normal {
+  syntax: "<number>";
+  initial-value: 200;
+  inherits: true;
+}
+@property --font-weight-thin {
+  syntax: "<number>";
+  initial-value: 100;
+  inherits: true;
+}
+@property --line-height {
+  syntax: "normal | <length-percentage> | <number>";
+  initial-value: 1.75rem;
+  inherits: true;
+}
+@property --heading-margin {
+  syntax: "<length-percentage>+";
+  initial-value: 1.5rem 0 1rem;
+  inherits: true;
+}
+/* Inputs */
+@property --border-radius {
+  syntax: "<length-percentage>+";
+  initial-value: 2px;
+  inherits: true;
+}
 :root {
   /* Colors */
-  --primaryH: 210;
-  --primaryS: 50%;
-  --primaryL: 40%;
+  --primary: #369;
   --primary-bg: #fff;
-  --secondaryH: 0;
-  --secondaryS: 0%;
-  --secondaryL: 13%;
+  --secondary: #222;
   --secondary-bg: #fff;
+  /* Status */
+  --error: #d00;
+  --warning: #ec0;
+  --info: #369;
+  --correct: #080;
   /* Font */
   --font-family: Helvetica, Arial, sans-serif;
   --font-size-root: 16px;
@@ -25,25 +174,19 @@
   --heading-margin: 1.5rem 0 1rem;
   /* Inputs */
   --border-radius: 2px;
-  /* Status */
-  --error: #d00;
-  --warning: #ec0;
-  --info: #369;
-  --correct: #080;
   /* Calculated colors */
-  --primary: hsl(var(--primaryH), var(--primaryS), var(--primaryL));
-  --primary-bright: hsl(var(--primaryH), calc(var(--primaryS) * 1.25), 90%);
-  --primary-transparent: hsla(var(--primaryH), var(--primaryS), var(--primaryL), 0.05);
-  --primary-dark: hsl(var(--primaryH), var(--primaryS), calc(var(--primaryL) * 0.5));
-  --primary-darker: hsl(var(--primaryH), var(--primaryS), calc(var(--primaryL) * 0.2));
-  --primary-light: hsl(var(--primaryH), var(--primaryS), 75%);
-  --primary-lighter: hsl(var(--primaryH), var(--primaryS), 96%);
-  --secondary: hsl(var(--secondaryH), var(--secondaryS), var(--secondaryL));
-  --secondary-transparent: hsl(var(--secondaryH), var(--secondaryS), var(--secondaryL), 0.05);
-  --secondary-dark: hsl(var(--secondaryH), var(--secondaryS), calc(var(--secondaryL) * 0.5));
-  --secondary-darker: hsl(var(--secondaryH), var(--secondaryS), calc(var(--secondaryL) * 0.2));
-  --secondary-light: hsl(var(--secondaryH), var(--secondaryS), 75%);
-  --secondary-lighter: hsl(var(--secondaryH), var(--secondaryS), 96%);
+  --primary-bright: oklch(from var(--primary) 90% calc(c * 1.25) h);
+  --primary-transparent: oklch(from var(--primary) l c h / 0.05);
+  --primary-dark: color-mix(in oklch, var(--primary), #000 20%);
+  --primary-darker: color-mix(in oklch, var(--primary), #000 50%);
+  --primary-light: color-mix(in oklch, var(--primary), #fff 75%);
+  --primary-lighter: color-mix(in oklch, var(--primary), #fff 90%);
+  --secondary-bright: oklch(from var(--secondary) 90% calc(c * 1.25) h);
+  --secondary-transparent: oklch(from var(--secondary) l c h / 0.05);
+  --secondary-dark: color-mix(in oklch, var(--secondary), #000 20%);
+  --secondary-darker: color-mix(in oklch, var(--secondary), #000 50%);
+  --secondary-light: color-mix(in oklch, var(--secondary), #fff 75%);
+  --secondary-lighter: color-mix(in oklch, var(--secondary), #fff 90%);
 }
 
 html {
@@ -489,7 +632,8 @@ blockquote {
 }
 blockquote::before {
   content: open-quote;
-  color: hsla(var(--secondaryH), var(--secondaryS), var(--secondaryL), 0.15);
+  /* TODO: UPDATE THESE COLORS */
+  color: color-mix(var(--secondary) 15%, rgba(0, 0, 0, 0) 85%);
   font-size: 5rem;
   font-family: "Times New Roman", "Times", serif;
   left: 0.25rem;
